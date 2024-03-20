@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>【保姆级】VsCode 安装GitHub Copilot实操教程 - 火哥干货</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="火哥干货"><meta name="msapplication-TileImage" content="/img/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="火哥干货"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="VsCode 安装GitHub Copilot实操教程。"><meta property="og:type" content="blog"><meta property="og:title" content="【保姆级】VsCode 安装GitHub Copilot实操教程"><meta property="og:url" content="https://7we.cn/github-copilot-on-vscode/"><meta property="og:site_name" content="火哥干货"><meta property="og:description" content="VsCode 安装GitHub Copilot实操教程。"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240318004026003.png"><meta property="article:published_time" content="2024-03-14T01:49:50.000Z"><meta property="article:modified_time" content="2024-03-20T15:09:45.358Z"><meta property="article:author" content="火哥干货"><meta property="article:tag" content="VsCode, &quot;GitHub Copilot&quot;"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240318004026003.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://7we.cn/github-copilot-on-vscode/"},"headline":"【保姆级】VsCode 安装GitHub Copilot实操教程","image":["https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240318004026003.png"],"datePublished":"2024-03-14T01:49:50.000Z","dateModified":"2024-03-20T15:09:45.358Z","author":{"@type":"Person","name":"火哥干货"},"publisher":{"@type":"Organization","name":"火哥干货","logo":{"@type":"ImageObject"}},"description":"VsCode 安装GitHub Copilot实操教程。"}</script><link rel="canonical" href="https://7we.cn/github-copilot-on-vscode/"><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><script>var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?8bddba9cb2b7bd792530388f5dee9014";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();</script><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/">火哥干货</a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">首页</a><a class="navbar-item" href="/c/WildCard/">WildCard虚拟信用卡</a><a class="navbar-item" href="/c/OpenAI/ChatGPT/">ChatGPT</a><a class="navbar-item" href="/c/OpenAI/Sora/">Sora</a><a class="navbar-item" href="/c/Onlyfans/">OnlyFans</a><a class="navbar-item" href="/c/MidJourney/">Midjourney</a><a class="navbar-item" href="/c/Claude3/">Claude3</a></div><div class="navbar-end"></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><div class="card-image"><span class="image is-7by3"><img class="fill" src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240318004026003.png" alt="【保姆级】VsCode 安装GitHub Copilot实操教程"></span></div><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2024-03-14T01:49:50.000Z" title="2024/3/14 09:49:50">2024-03-14</time>发表</span><span class="level-item"><a class="link-muted" href="/c/%E5%85%B6%E4%BB%96/">其他</a><span> / </span><a class="link-muted" href="/c/%E5%85%B6%E4%BB%96/Web%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/">Web前端技术</a></span><span class="level-item">14 分钟读完 (大约2110个字)</span></div></div><h1 class="title is-3 is-size-4-mobile">【保姆级】VsCode 安装GitHub Copilot实操教程</h1><div class="content"><h2 id="0-前言"><a href="#0-前言" class="headerlink" title="0. 前言"></a>0. 前言</h2><p>GitHub Copilot，俗称“副驾驶”，是GitHub携手OpenAI共同打造的一款革命性的人工智能代码辅助工具。通过将其插件化集成至编辑器（如VS Code），Copilot能够为用户提供强大的代码自动补全功能，并根据用户输入的注释快速生成相应代码。此外，它还能协助解释代码逻辑，自动生成测试代码，以及为代码片段添加注释，从而极大地提升了开发者的编程效率与代码质量。</p>
+<span id="more"></span>
+
+<p><strong>OnlyFans</strong> 订阅教程移步：<a href="https://7we.cn/register-onlyfans/">【保姆级】2024年最新Onlyfans订阅教程</a></p>
+<p><strong>Midjourney</strong> 订阅教程移步：<a href="https://7we.cn/subscribe-midjourney/"> 【一看就会】五分钟完成MidJourney订阅</a></p>
+<p><strong>GPT-4.0</strong> 升级教程移步：<a href="https://7we.cn/subscribe-chatgpt-plus-in-five-minutes/">五分钟开通GPT4.0</a></p>
+<p> <strong>如果你需要使用Wildcard开通GPT4、Midjourney或是Onlyfans的话，请点击</strong>：<a href="https://7we.cn/register-wildcard/">WildCard使用教程</a></p>
+<h2 id="1-GitHub-Copilot的优点"><a href="#1-GitHub-Copilot的优点" class="headerlink" title="1. GitHub Copilot的优点"></a>1. GitHub Copilot的优点</h2><p>相比于ChatGPT，GitHub Copilot有以下的优点：</p>
+<ol>
+<li><p>GitHub Copilot完美融入VS Code编辑器，让您在编写代码的过程中无需切换界面，即可直接提问、处理并生成代码。这一功能极大地简化了将问题或GPT回答来回粘贴的繁琐步骤，使您的编程体验更加流畅高效。</p>
+</li>
+<li><p>GitHub Copilot生成的代码与项目紧密贴合，因为它是以项目当前的代码上下文为基础进行智能生成的。这种特性使得Copilot能够产生与当前项目代码风格高度一致的代码，不仅提升了代码的可读性和一致性，也增强了代码的可移植性，让您的项目更加稳健和高效。</p>
+</li>
+</ol>
+<h2 id="2-如何安装GitHub-Copilot？"><a href="#2-如何安装GitHub-Copilot？" class="headerlink" title="2. 如何安装GitHub Copilot？"></a>2. 如何安装GitHub Copilot？</h2><p>以下是详细的安装步骤：</p>
+<h3 id="2-1、安装-Visual-Studio-Code"><a href="#2-1、安装-Visual-Studio-Code" class="headerlink" title="2.1、安装 Visual Studio Code"></a>2.1、安装 Visual Studio Code</h3><p>如果您尚未安装 Visual Studio Code，您可以从 <a target="_blank" rel="noopener" href="https://code.visualstudio.com/">官方网站</a> 下载并安装最新版本。</p>
+<h3 id="2-2、安装-GitHub-Copilot-扩展"><a href="#2-2、安装-GitHub-Copilot-扩展" class="headerlink" title="2.2、安装 GitHub Copilot 扩展"></a>2.2、安装 GitHub Copilot 扩展</h3><ol>
+<li><p>启动VSCode，点击界面左侧的扩展视图(Extensions)，在搜索栏中输入”GitHub Copilot”，在搜索结果中找到“GitHub Copilot”和“GitHub Copilot Chat”并点击安装(Install)。</p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240318005216133.png" alt="image-20240318005216133"></p>
+<p>安装完成界面里有这个图标代表安装完成了</p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240318005713247.png" alt="image-20240318005713247"></p>
+<ol start="2">
+<li><p>插件安装完成之后需要重启一下VSCode并注册登录，登录方式是通过github账号授权登录。</p>
+<p>注意登录之前请确保您在浏览器中已经登录到 GitHub 帐户。</p>
+<p>登录步骤：按照图示步骤 点击右下角图标 &gt;&gt; 点击「Sign in to GitHub」按钮，在弹出的界面中点击「允许(Allow)」打开浏览器获取Github账号授权。</p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240318010120615.png" alt="image-20240318010120615"></p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240318010334040.png" alt="image-20240318010334040"></p>
+<p>点击「Authorize Visual-Studio-Code」按钮确认授权。</p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240318010432018.png" alt="image-20240318010432018"></p>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="3-使用GitHub-Copilot"><a href="#3-使用GitHub-Copilot" class="headerlink" title="3. 使用GitHub Copilot"></a>3. 使用GitHub Copilot</h2><h3 id="3-1-试用-订阅Copilot服务"><a href="#3-1-试用-订阅Copilot服务" class="headerlink" title="3.1 试用&#x2F;订阅Copilot服务"></a>3.1 试用&#x2F;订阅Copilot服务</h3><p>GitHub Copilot提供30天免费试用，订阅费用是10美元一个月，按年是100美元，在到期之前可以选择退订，或者可以选择更换订阅方式。</p>
+<p>参考图中步骤点击右下角Copilot的图标，在弹出的Copilot菜单中选择「GitHub Copilot Chat」，然后点击左侧Chat框中的[Start 30-day Free Trial]进入试用&#x2F;订阅界面。</p>
+<p>也手动登录Github网站，依次点击「Settings 」&gt; 「Billing and plans」&gt; 「Plans and usage」，在页面中找到“Add-ons”部分找到「GitHub Copilot」 然后点击「Enable GitHub Copilot」按钮进入订阅界面。</p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240318012332437.png" alt="image-20240318012332437"></p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240318013158500.png" alt="image-20240318013158500"></p>
+<p>点击「Get access to GitHub Copilot」按钮进入付款方式界面，输入银行卡信息，支持银联、Visa双币信用卡、Paypal来支付。</p>
+<p>也可以使用虚拟信用卡WildCard通过支付宝来支付，了解详情请移步：<a href="https://7we.cn/register-wildcard/">WildCard虚拟信用卡注册保姆级教程</a>。</p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240318013402758.png" alt="image-20240318013402758"></p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240318014356064.png" alt="image-20240318014356064"></p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240319203635767.png"></p>
+<p>绑定支付信用卡之后，重启VSCode，参考图中步骤再次点击右下角Copilot的图标，在弹出的Copilot菜单中选择「GitHub Copilot Chat」，左侧出现的界面显示已经订阅成功，点击最下面的输入框提问即可。</p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240319204325628.png" alt="image-20240319204325628"></p>
+<h3 id="3-2-使用Copilot功能"><a href="#3-2-使用Copilot功能" class="headerlink" title="3.2 使用Copilot功能"></a>3.2 使用Copilot功能</h3><p>此时，GitHub Copilot已经安装订阅完成，现在可以尽情享受这个强大的编程助手，提高您的代码编写效率。</p>
+<p>新建一个js文件，点击图示「星号」图标或者按快捷键Ctrl+I即可调出GitHub Copilot对话界面，可以在输入框中输入提示内容以生成代码。</p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240319205720439.png" alt="image-20240319205720439"></p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240319205735614.png" alt="image-20240319205735614"></p>
+<p>也直接在类中输入代码，GitHub Copilot会自动根据你的代码猜想你需要生成的代码，如果生成的内容符合你的要求，可以按 「Tab」键导入生成的内容，如下图</p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240319210055834.png" alt="image-20240319210055834"></p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240319210111523.png" alt="image-20240319210111523"></p>
+<p>请注意，由于GitHub Copilot可能会不时地进行更新，我们建议您时常查阅GitHub Copilot的官方文档，以获取最新的信息和详细说明。这样，您可以确保始终了解并充分利用该工具的最新功能和改进。</p>
+<h3 id="3-3-使用技巧"><a href="#3-3-使用技巧" class="headerlink" title="3.3 使用技巧"></a>3.3 使用技巧</h3><p>GitHub Copilot使用有2个区域，</p>
+<ol>
+<li>Chat区域，可以直接在聊天框中输入你的问题，以便获取相关解答。如果在提问时能够选中相关的代码行，这将有助于生成更精确、更可靠的答案，因为系统会根据代码的上下文进行分析和推理。</li>
+<li>编辑器文件中，可以自动提示，注释生成代码等操作</li>
+</ol>
+<h4 id="3-3-1-自动建议（Tab）"><a href="#3-3-1-自动建议（Tab）" class="headerlink" title="3.3.1 自动建议（Tab）"></a>3.3.1 自动建议（Tab）</h4><p>写代码的时候它自动的给你提示，提示的内容是灰色的，你可以按下<code>Tab</code>键接受建议，通过<code>Esc</code>键丢弃提示。</p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240319210558458.png" alt="image-20240319210558458"></p>
+<h4 id="3-3-2-注释生成代码"><a href="#3-3-2-注释生成代码" class="headerlink" title="3.3.2 注释生成代码"></a>3.3.2 注释生成代码</h4><p>您可以在开始编写代码之前，先写一段详细的注释，这样可以帮助您更清晰地明确自己的需求和期望。注释越详细，GitHub Copilot 就越能够理解您的意图，从而生成更符合您要求的代码。</p>
+<p>写完注释之后，按下<code>ctrl + enter</code>输出十种代码实现，你可以根据个人喜好挑选它生成的代码。你也可以打开chat对话框直接询问代码。</p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240319211040302.png" alt="image-20240319211040302"></p>
+<h4 id="3-3-3-解释代码"><a href="#3-3-3-解释代码" class="headerlink" title="3.3.3 解释代码"></a>3.3.3 解释代码</h4><p>解释代码的方法有2种：</p>
+<ol>
+<li><p>方式1</p>
+<p>选中要解释的代码，在chat聊天框中输入<code>/explain</code>，默认以英文解释。如果需要用中文解释，可以在后面更新更多的描述信息，比如：<code>/explain 用中文解释</code></p>
+</li>
+</ol>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240319211518389.png" alt="image-20240319211518389"></p>
+<ol start="2">
+<li><p>方式2</p>
+<p>选中要解释代码,右键<code>Copilot &gt; Explain This</code>，但是这种方式默认是以英文输出。如下图</p>
+</li>
+</ol>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240319211618824.png" alt="image-20240319211618824"></p>
+<h4 id="3-3-4-生成测试代码"><a href="#3-3-4-生成测试代码" class="headerlink" title="3.3.4 生成测试代码"></a>3.3.4 生成测试代码</h4><p>使用以上3.3.3中的方式，把命令换成<code>/tests</code> <code>generate tests</code>即可。</p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240319211912097.png" alt="image-20240319211912097"></p>
+<p>以上所述，仅为GitHub Copilot的一些基本使用技巧，若您想进一步深入了解并挖掘更多高级功能，建议您前往GitHub Copilot的官方网站查阅相关资料，那里将有更多详尽的使用指南和技巧等待您去发掘。</p>
+<h3 id="3-3-VSCode退出GitHub账号"><a href="#3-3-VSCode退出GitHub账号" class="headerlink" title="3.3 VSCode退出GitHub账号"></a>3.3 VSCode退出GitHub账号</h3><p>如果需要退出GitHub账号，可以参考下图操作：</p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240319212409599.png" alt="image-20240319212409599"></p>
+</div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/VsCode-GitHub-Copilot/">VsCode, &quot;GitHub Copilot&quot;</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/register-onlyfans/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">【保姆级】2024年最新Onlyfans订阅教程</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/register-wildcard/"><span class="level-item">WildCard虚拟信用卡注册保姆级教程</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><!--!--><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">分类</h3><ul class="menu-list"><li><a class="level is-mobile" href="/c/Claude3/"><span class="level-start"><span class="level-item">Claude3</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/c/MidJourney/"><span class="level-start"><span class="level-item">MidJourney</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/c/Onlyfans/"><span class="level-start"><span class="level-item">Onlyfans</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/c/OpenAI/"><span class="level-start"><span class="level-item">OpenAI</span></span><span class="level-end"><span class="level-item tag">8</span></span></a><ul><li><a class="level is-mobile" href="/c/OpenAI/ChatGPT/"><span class="level-start"><span class="level-item">ChatGPT</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile" href="/c/OpenAI/Sora/"><span class="level-start"><span class="level-item">Sora</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li></ul></li><li><a class="level is-mobile" href="/c/WildCard/"><span class="level-start"><span class="level-item">WildCard</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/c/%E5%85%B6%E4%BB%96/"><span class="level-start"><span class="level-item">其他</span></span><span class="level-end"><span class="level-item tag">6</span></span></a><ul><li><a class="level is-mobile" href="/c/%E5%85%B6%E4%BB%96/PicGo/"><span class="level-start"><span class="level-item">PicGo</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/c/%E5%85%B6%E4%BB%96/Typora/"><span class="level-start"><span class="level-item">Typora</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/c/%E5%85%B6%E4%BB%96/Web%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/"><span class="level-start"><span class="level-item">Web前端技术</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/c/%E5%85%B6%E4%BB%96/%E5%B9%BB%E5%85%BD%E5%B8%95%E9%B2%81/"><span class="level-start"><span class="level-item">幻兽帕鲁</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/c/%E5%85%B6%E4%BB%96/%E6%9C%AA%E5%88%86%E7%B1%BB/"><span class="level-start"><span class="level-item">未分类</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li></ul></div></div></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-03-20T14:52:35.000Z">2024-03-20</time></p><p class="title"><a href="/github-copilot-unsubscribe/">GitHub Copilot怎么取消付费？</a></p><p class="categories"><a href="/c/%E5%85%B6%E4%BB%96/">其他</a> / <a href="/c/%E5%85%B6%E4%BB%96/Web%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/">Web前端技术</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-03-17T02:51:46.000Z">2024-03-17</time></p><p class="title"><a href="/useful-ai-tools/">除了 ChatGPT，还有哪些好用的AI工具？</a></p><p class="categories"><a href="/c/MidJourney/">MidJourney</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-03-16T14:54:28.000Z">2024-03-16</time></p><p class="title"><a href="/how-to-use-midjourney/">MidJourney基础教程</a></p><p class="categories"><a href="/c/MidJourney/">MidJourney</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-03-16T14:12:58.000Z">2024-03-16</time></p><p class="title"><a href="/register-apple-id/">【2024亲测】保姆级获取美区Apple Id教程</a></p><p class="categories"><a href="/c/%E5%85%B6%E4%BB%96/">其他</a> / <a href="/c/%E5%85%B6%E4%BB%96/%E6%9C%AA%E5%88%86%E7%B1%BB/">未分类</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-03-16T13:49:07.000Z">2024-03-16</time></p><p class="title"><a href="/chatgpt-continue-generating/">ChatGPT回答中断/消息发不完的解决办法</a></p><p class="categories"><a href="/c/OpenAI/">OpenAI</a> / <a href="/c/OpenAI/ChatGPT/">ChatGPT</a></p></div></article></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><p class="is-size-7">© 2022~2024</p></div><div class="level-end"></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><!--!--></body></html>
