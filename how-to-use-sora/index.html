@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>详细教程与使用指南助您轻松上手Sora - 火哥研习社</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="火哥研习社"><meta name="msapplication-TileImage" content="/img/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="火哥研习社"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="详细教程与使用指南助您轻松上手OpenAI Sora"><meta property="og:type" content="blog"><meta property="og:title" content="详细教程与使用指南助您轻松上手Sora"><meta property="og:url" content="https://7we.cn/how-to-use-sora/"><meta property="og:site_name" content="火哥研习社"><meta property="og:description" content="详细教程与使用指南助您轻松上手OpenAI Sora"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240323225713228.png"><meta property="article:published_time" content="2024-03-23T13:51:53.000Z"><meta property="article:modified_time" content="2024-03-25T15:06:31.842Z"><meta property="article:author" content="火哥研习社"><meta property="article:tag" content="OpenAI"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240323225713228.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://7we.cn/how-to-use-sora/"},"headline":"详细教程与使用指南助您轻松上手Sora","image":["https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240323225713228.png"],"datePublished":"2024-03-23T13:51:53.000Z","dateModified":"2024-03-25T15:06:31.842Z","author":{"@type":"Person","name":"火哥研习社"},"publisher":{"@type":"Organization","name":"火哥研习社","logo":{"@type":"ImageObject"}},"description":"详细教程与使用指南助您轻松上手OpenAI Sora"}</script><link rel="canonical" href="https://7we.cn/how-to-use-sora/"><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><script>var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?8bddba9cb2b7bd792530388f5dee9014";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();</script><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><script data-ad-client="3717344278068553" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" async></script><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/">火哥研习社</a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">首页</a><a class="navbar-item" href="/c/WildCard/">WildCard虚拟信用卡</a><a class="navbar-item" href="/c/OpenAI/ChatGPT/">ChatGPT</a><a class="navbar-item" href="/c/OpenAI/Sora/">Sora</a><a class="navbar-item" href="/c/Onlyfans/">OnlyFans</a><a class="navbar-item" href="/c/MidJourney/">Midjourney</a><a class="navbar-item" href="/c/Claude3/">Claude3</a></div><div class="navbar-end"><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><div class="card-image"><span class="image is-7by3"><img class="fill" src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240323225713228.png" alt="详细教程与使用指南助您轻松上手Sora"></span></div><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2024-03-23T13:51:53.000Z" title="2024/3/23 21:51:53">2024-03-23</time>发表</span><span class="level-item"><a class="link-muted" href="/c/OpenAI/">OpenAI</a><span> / </span><a class="link-muted" href="/c/OpenAI/Sora/">Sora</a></span><span class="level-item">24 分钟读完 (大约3595个字)</span></div></div><h1 class="title is-3 is-size-4-mobile">详细教程与使用指南助您轻松上手Sora</h1><div class="content"><p>在2024年2月16日，OpenAI团队宣布了一项革命性的技术突破——推出了首个能够将文本描述转化为视频内容的人工智能模型，名为Sora。这一创新标志着人工智能在多媒体内容创作领域迈出了重要一步。Sora模型不仅能够根据用户的文字描述生成长达60秒的动态视频，还能创造出细节丰富的背景场景、复杂的多角度镜头切换，以及充满情感的多个动画角色。更令人惊叹的是，Sora甚至能够为静态图像注入生命力，赋予其动态的视觉效果。</p>
+<p>用户只需简单地输入一段文字描述，Sora便能自动将其转化为引人入胜的视频内容，这一过程既快捷又直观。Sora的易用性和强大的功能使其成为了视频内容创作者的理想工具，无论是专业制作者还是业余爱好者，都能够借助Sora轻松实现创意的可视化。</p>
+<span id="more"></span>
+
+<h2><span id="精选文章">精选文章</span></h2><table>
+<thead>
+<tr>
+<th align="left">类别</th>
+<th align="left">教程</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Claude</td>
+<td align="left"><a href="https://7we.cn/resolve-claude3-banned/">如何解决Claude账号被封，及Claude3使用方法</a><br><a href="https://7we.cn/register-claude3/"><font color="ff8000">Claude3注册教程，解决Claude手机号验证问题</font></a><br> <a href="https://7we.cn/register-claude3-anthropic/">Anthropic官网提供Claude3注册及使用教程|以及如何预防封号</a></td>
+</tr>
+<tr>
+<td align="left">Sora</td>
+<td align="left"><a href="https://7we.cn/how-to-use-sora/"><font color="ff8000">详细教程与使用指南助您轻松上手Sora</font></a><br><a href="https://7we.cn/what-is-sora/"><font color="ff8000">OpenAI Sora是什么？Sora到底能做什么？它与其他类似技术有什么区别</font></a></td>
+</tr>
+<tr>
+<td align="left">ChatGPT</td>
+<td align="left"><a href="https://7we.cn/subscribe-chatgpt-plus-in-five-minutes/"><font color="ff8000">国内升级GPT-Plus教程，订阅GTP4-0</font></a><br><a href="https://7we.cn/register-chatgpt-without-phone/"><font color="ff8000">国内无需手机验证码获取GPT账号教程</font></a><br><a href="https://7we.cn/register-apple-id/"><font color="ff8000">【2024亲测】保姆级获取美区Apple Id教程</font></a></td>
+</tr>
+<tr>
+<td align="left">Onlyfans</td>
+<td align="left"><a href="https://7we.cn/register-onlyfans/"><font color="ff8000">Onlyfans-注册以及充值、订阅教程</font></a><br><a href="https://7we.cn/how-to-search-blogger-on-onlyfans/"><font color="ff8000">【2024亲测】Onlyfans搜索博主？如何在OnlyFans搜索HongkongDoll</font></a></td>
+</tr>
+<tr>
+<td align="left">Midjourney</td>
+<td align="left"><a href="https://7we.cn/subscribe-midjourney/"><font color="ff8000">【一看就会】五分钟完成MidJourney订阅</font></a></td>
+</tr>
+<tr>
+<td align="left">WildCard</td>
+<td align="left"><a href="https://7we.cn/register-wildcard/"><font color="ff8000">WildCard虚拟信用卡注册保姆级教程</font></a><br><a href="https://7we.cn/wildcard-info/"><font color="ff8000">WildCard虚拟信用卡平台详解</font></a></td>
+</tr>
+<tr>
+<td align="left">其他</td>
+<td align="left"><a href="https://7we.cn/register-patreon/"><font color="ff8000">【新手小白教程】2024最新：如何轻松订阅Patreon及其支付、充值全攻略</font></a><br><a href="https://7we.cn/register-youtube-premium/"><font color="ff8000">【新手小白】如何订阅Youtube Premium？Youtube Premium购买教程（2024最新）</font></a></td>
+</tr>
+</tbody></table>
+<h3><span id="sora演示">Sora演示</span></h3><p>以下是OpenAI官方给出的示例</p>
+<blockquote>
+<p>提示词：A stylish woman walks down a Tokyo street filled with warm glowing neon and animated city signage. She wears a black leather jacket, a long red dress, and black boots, and carries a black purse. She wears sunglasses and red lipstick. She walks confidently and casually. The street is damp and reflective, creating a mirror effect of the colorful lights. Many pedestrians walk about.</p>
+<p>中文：一位时尚女性走在充满温暖霓虹灯和动画城市标牌的东京街道上。她穿着黑色皮夹克、红色长裙和黑色靴子，拎着黑色钱包。她戴着太阳镜，涂着红色口红。她走路自信又随意。街道潮湿且反光，在彩色灯光的照射下形成镜面效果。许多行人走来走去。</p>
+</blockquote>
+<iframe width="600" height="338" src="https://cdn.openai.com/sora/videos/tokyo-walk.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<blockquote>
+<p>提示词：Several giant wooly mammoths approach treading through a snowy meadow, their long wooly fur lightly blows in the wind as they walk, snow covered trees and dramatic snow capped mountains in the distance, mid afternoon light with wispy clouds and a sun high in the distance creates a warm glow, the low camera view is stunning capturing the large furry mammal with beautiful photography, depth of field.</p>
+<p>中文：几只巨大的毛茸茸的猛犸象踏着白雪皑皑的草地走近，它们长长的毛茸茸的皮毛在风中轻轻飘动，远处覆盖着积雪的树木和雄伟的雪山，午后的阳光下有缕缕云彩，太阳高高地挂在空中距离产生温暖的光芒，低相机视角令人惊叹地捕捉到大型毛茸茸的哺乳动物，具有美丽的摄影和景深。</p>
+</blockquote>
+<iframe width="600" height="338" src="https://cdn.openai.com/sora/videos/wooly-mammoth.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<blockquote>
+<p>提示词：Drone view of waves crashing against the rugged cliffs along Big Sur’s garay point beach. The crashing blue waters create white-tipped waves, while the golden light of the setting sun illuminates the rocky shore. A small island with a lighthouse sits in the distance, and green shrubbery covers the cliff’s edge. The steep drop from the road down to the beach is a dramatic feat, with the cliff’s edges jutting out over the sea. This is a view that captures the raw beauty of the coast and the rugged landscape of the Pacific Coast Highway.</p>
+<p>中文：无人机拍摄的海浪拍打大苏尔加雷角海滩崎岖悬崖的景象。蔚蓝的海水激起白色的波浪，夕阳的金色光芒照亮了岩石海岸。远处有一座小岛，岛上有一座灯塔，悬崖边长满了绿色的灌木丛。从公路到海滩的陡峭落差是一项戏剧性的壮举，悬崖边缘伸出海面。这一景观捕捉到了海岸的原始之美和太平洋海岸公路的崎岖景观。</p>
+</blockquote>
+<iframe width="600" height="338" src="https://cdn.openai.com/sora/videos/big-sur.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+<h2><span id="sora的技术原理">Sora的技术原理</span></h2><p>通过简洁明了的文本描述，Sora竟能缔造出如此连贯动人的长视频，这一壮举的实现过程令人叹为观止。那么，Sora究竟是如何实现这一神奇转变的呢？</p>
+<h3><span id="基于transformer架构">基于Transformer架构</span></h3><p>Sora模型与GPT模型有着异曲同工之妙，它们均根植于卓越的Transformer架构，赋予了Sora无与伦比的扩展能力。Transformer，这一基于自注意力机制的神经网络架构，独具匠心地能够同时处理输入文本中的所有位置信息，使模型能够精准捕捉全局的上下文信息。正是这种架构的巧妙设计，让Sora在生成视频时能够更深刻地理解文本描述，进而创造出更为生动、连贯的视觉内容。Transformer架构的引入，不仅提升了Sora的文本解析能力，更使其在视频生成领域展现出了惊人的潜力。</p>
+<h3><span id="扩散模型和训练稳定性">扩散模型和训练稳定性</span></h3><p>Sora模型巧妙地采用了扩散模型的方法，相较于传统的GAN模型，其在生成多样性和训练稳定性方面展现出了显著的优势。扩散模型通过逐步消除噪声的方式，精心打磨出高质量的视频内容，这一创新性的做法不仅有效地提升了生成视频的质量，还赋予了Sora更出色的视频场景生成能力。借助扩散模型的力量，Sora得以生成更加逼真、引人入胜的视频场景，为观众带来前所未有的视觉盛宴。</p>
+<h3><span id="生成视频的数据处理和压缩">生成视频的数据处理和压缩</span></h3><p>生成视频无疑是一项涉及海量数据处理的复杂任务，然而Sora模型通过运用先进的数据处理和压缩技术，成功攻克了这一难题。这些技术的运用使得Sora能够在确保视频质量的前提下，有效减少存储空间的占用，从而实现了高效、经济的视频生成。通过不断优化数据处理和压缩算法，Sora模型在视频生成领域展现出了卓越的性能和效率，为用户带来了更为便捷、高效的视频创作体验。</p>
+<h3><span id="视频质量和逼真度">视频质量和逼真度</span></h3><p>在生成视频的过程中，Sora模型始终坚守着对视频质量和逼真度的极致追求。得益于Transformer架构的卓越性能和扩散模型的独特优势，Sora成功生成了更加连贯、且逼真度极高的视频场景。这一成就不仅彰显了Sora在视频生成领域的领先地位，更凸显了其在应用领域所蕴含的广泛潜力。无论是影视制作中的特效呈现，还是游戏开发中的场景构建，Sora都能以其出色的性能，为创作者们带来前所未有的创作体验。</p>
+<h2><span id="sora的应用场景">Sora的应用场景</span></h2><p>OpenAI Sora作为一种基于文本提示生成视频的人工智能工具，具备广泛且多样的应用场景：</p>
+<ol>
+<li><strong>电影与视频制作</strong>：在电影和视频制作领域，Sora可发挥重要作用。它能快速生成概念预览，使导演和制片人在拍摄前便能直观地预览场景与故事情节。这不仅能降低制作成本，更能提高制作效率，确保影片的视觉效果达到预期。</li>
+<li><strong>广告创意</strong>：在广告行业，Sora同样具有广泛应用。广告商可借助其强大的生成能力，快速制作出高质量、吸引人的广告内容，从而提升广告的传播效果和市场竞争力。</li>
+<li><strong>游戏开发与设计</strong>：在游戏开发领域，Sora能够为开发者提供高效的视觉效果制作支持。无论是创建游戏预告片还是概念艺术，Sora都能为游戏增添更多趣味性和吸引力。</li>
+<li><strong>教育培训</strong>：在教育领域，Sora为教育培训提供了全新的可能性。通过生成生动有趣的视频内容，Sora能够帮助学生更好地理解和掌握知识，提高学习效果。</li>
+<li><strong>内容创作与社交分享</strong>：对于内容创作者和社交媒体影响者而言，Sora是他们创作高质量视频内容的得力助手。借助Sora，他们可以轻松制作出吸引人的视频，吸引更多观众关注和互动。</li>
+<li><strong>新闻与纪录片制作</strong>：在新闻和纪录片制作领域，Sora能够迅速生成新闻报道或纪录片中的视觉内容。特别是在模拟复杂事件或历史场景时，Sora能够提供逼真且生动的视觉呈现。</li>
+<li><strong>艺术创意与探索</strong>：艺术家和创意专业人士可以利用Sora进行艺术创新和探索。通过生成独特的视觉艺术作品，他们可以拓展自己的创作边界，为观众带来全新的视觉体验。</li>
+<li><strong>产品设计与建筑可视化</strong>：在产品设计和建筑领域，Sora能够生成产品原型或建筑项目的视觉呈现。这有助于设计师和客户更好地理解和评估设计概念，从而做出更明智的决策。</li>
+</ol>
+<h2><span id="如何使用sora">如何使用Sora</span></h2><p>使用Sora的操作流程极为便捷，您只需遵循以下简单步骤：</p>
+<ol>
+<li>提供文字指令：将您希望转化为视频的精彩文字描述输入到Sora模型中。</li>
+<li>等待视频生成：请耐心等待片刻，Sora将迅速为您生成视频，这通常只需几分钟即可完成。</li>
+<li>保存和分享：一旦视频生成完成，您可以轻松将其保存到您的设备上，并随时与他人分享，展现您的创意与才华。</li>
+</ol>
+<p>截止2024年3月23日，Sora目前<strong>暂未开放</strong>，只提供给部分内测用户使用，ChatGPT Plus会员有望在未来率先体验到这一技术。对于尚未开通ChatGPT Plus会员的用户，可以参考相关文章或官方指引进行开通，以便在Sora开放时能够第一时间体验到其强大的功能。</p>
+<p><strong>GPT-4.0</strong> 升级教程移步：<a href="https://7we.cn/subscribe-chatgpt-plus-in-five-minutes/">五分钟开通GPT4.0</a></p>
+<p>Sora官网入口：<a target="_blank" rel="noopener" href="https://openai.com/sora">https://openai.com/sora</a></p>
+<p>Sora作为OpenAI旗下的文本生成视频模型，已经展现出其强大的技术实力。与此同时，OpenAI还拥有备受欢迎的ChatGPT和AI对话功能，以及令人瞩目的文本生图能力，这些功能目前均可以直接使用。还没有注册ChatGPT账户的可以参考这篇文章来注册<a href="https://7we.cn/register-chatgpt-without-phone/">无需手机验证码获取ChatGPT账号教程</a></p>
+<p>AI对话能力</p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240323231452864.png" alt="image-20240323231452864"></p>
+<p>AI生产图片能力</p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240323231517778.png" alt="image-20240323231517778"></p>
+<h2><span id="sora的不足">Sora的不足</span></h2><p>尽管Sora模型已经取得了显著进展，但目前它仍存在一定的局限性。例如，在处理复杂场景的物理原理时，Sora可能难以达到完美的模拟效果。同时，在理解因果关系的具体实例方面，模型有时也可能出现偏差，比如一个人咬饼干后，饼干上并未出现预期的咬痕。</p>
+<p>此外，Sora在解析空间细节方面可能存在一定的混淆，比如左右方向的识别问题。同时，模型在描述随时间推移的事件时也可能遇到挑战，例如难以精确遵循特定的相机轨迹。</p>
+<p>然而，我坚信随着时间的推移，OpenAI团队将不断攻克这些难题，使Sora模型更加完善。作为理解和模拟现实世界的基础模型，Sora在实现通用人工智能（AGI）的道路上迈出了重要的一步，并将为未来的技术进步奠定坚实基础。</p>
+<hr>
+<p><strong>你好，我是火哥！</strong></p>
+<p>亲爱的读者你好，我是<strong>火哥</strong>，一个乐于分享技术类干货的博主。 最新原创的文章都先发布在公众号，欢迎关注哦~</p>
+<p><strong>扫描下方二维码</strong>，带你第一时间了解ChatGPT、Sora、Midjourney最新动态！</p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/9475746462373236362612.png" alt="9475746462373236362612"></p>
+</div><div class="article-licensing box"><div class="licensing-title"><p>详细教程与使用指南助您轻松上手Sora</p><p><a href="https://7we.cn/how-to-use-sora/">https://7we.cn/how-to-use-sora/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>火哥研习社</p></div></div><div class="level-item is-narrow"><div><h6>发布于</h6><p>2024-03-23</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2024-03-25</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/OpenAI/">OpenAI</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/mask-grok-open-source/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">马斯克震撼开源Grok-1：引领全球，3140亿参数缔造超大模型新纪元！</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/how-sora-works/"><span class="level-item">Sora原理深度解析：OpenAI Sora的工作原理全面解读</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="/img/avatar.jpg" alt="火哥"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">火哥</p><p class="is-size-6 is-block">一个乐于分享技术类干货的博主</p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">38</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">16</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">14</p></a></div></div></nav></div></div><!--!--><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">分类</h3><ul class="menu-list"><li><a class="level is-mobile" href="/c/Claude3/"><span class="level-start"><span class="level-item">Claude3</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/c/MidJourney/"><span class="level-start"><span class="level-item">MidJourney</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile" href="/c/Onlyfans/"><span class="level-start"><span class="level-item">Onlyfans</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/c/OpenAI/"><span class="level-start"><span class="level-item">OpenAI</span></span><span class="level-end"><span class="level-item tag">16</span></span></a><ul><li><a class="level is-mobile" href="/c/OpenAI/ChatGPT/"><span class="level-start"><span class="level-item">ChatGPT</span></span><span class="level-end"><span class="level-item tag">12</span></span></a></li><li><a class="level is-mobile" href="/c/OpenAI/Sora/"><span class="level-start"><span class="level-item">Sora</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li></ul></li><li><a class="level is-mobile" href="/c/WildCard/"><span class="level-start"><span class="level-item">WildCard</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/c/%E5%85%B6%E4%BB%96/"><span class="level-start"><span class="level-item">其他</span></span><span class="level-end"><span class="level-item tag">9</span></span></a><ul><li><a class="level is-mobile" href="/c/%E5%85%B6%E4%BB%96/Grok/"><span class="level-start"><span class="level-item">Grok</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/c/%E5%85%B6%E4%BB%96/Patreon/"><span class="level-start"><span class="level-item">Patreon</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/c/%E5%85%B6%E4%BB%96/PicGo/"><span class="level-start"><span class="level-item">PicGo</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/c/%E5%85%B6%E4%BB%96/Typora/"><span class="level-start"><span class="level-item">Typora</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/c/%E5%85%B6%E4%BB%96/Web%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/"><span class="level-start"><span class="level-item">Web前端技术</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/c/%E5%85%B6%E4%BB%96/Youtube/"><span class="level-start"><span class="level-item">Youtube</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/c/%E5%85%B6%E4%BB%96/%E5%B9%BB%E5%85%BD%E5%B8%95%E9%B2%81/"><span class="level-start"><span class="level-item">幻兽帕鲁</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/c/%E5%85%B6%E4%BB%96/%E6%9C%AA%E5%88%86%E7%B1%BB/"><span class="level-start"><span class="level-item">未分类</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li></ul></div></div></div><div class="column-right-shadow is-hidden-widescreen"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3"><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-03-25T12:49:50.000Z">2024-03-25</time></p><p class="title"><a href="/midjourney-consistency/">Midjourney迎来重大更新！深度解析全新「角色一致性」命令</a></p><p class="categories"><a href="/c/MidJourney/">MidJourney</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-03-24T15:52:53.000Z">2024-03-24</time></p><p class="title"><a href="/resolve-claude3-banned/">Claude账号被封原因及解决办法详解</a></p><p class="categories"><a href="/c/Claude3/">Claude3</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-03-24T15:51:53.000Z">2024-03-24</time></p><p class="title"><a href="/register-claude3-anthropic/">Anthropic官网发布Claude3详细注册与使用指南</a></p><p class="categories"><a href="/c/Claude3/">Claude3</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-03-24T12:51:53.000Z">2024-03-24</time></p><p class="title"><a href="/chatgpt-4-5-news/">ChatGPT4.5：能力飞跃升级，带来前所未有的全新体验</a></p><p class="categories"><a href="/c/OpenAI/">OpenAI</a> / <a href="/c/OpenAI/ChatGPT/">ChatGPT</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-03-24T12:51:53.000Z">2024-03-24</time></p><p class="title"><a href="/how-to-write-dissertation/">ChatGPT助力论文写作：详细步骤解析</a></p><p class="categories"><a href="/c/OpenAI/">OpenAI</a> / <a href="/c/OpenAI/ChatGPT/">ChatGPT</a></p></div></article></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">标签</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/Apple-Id/"><span class="tag">Apple Id</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/ChatGPT/"><span class="tag">ChatGPT</span><span class="tag">9</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Claude3/"><span class="tag">Claude3</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/GitHub-Copilot/"><span class="tag">GitHub Copilot</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Grok/"><span class="tag">Grok</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/MidJourney/"><span class="tag">MidJourney</span><span class="tag">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Onlyfans/"><span class="tag">Onlyfans</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/OpenAI/"><span class="tag">OpenAI</span><span class="tag">5</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Patreon/"><span class="tag">Patreon</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/PicGo/"><span class="tag">PicGo</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Typora/"><span class="tag">Typora</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/VsCode/"><span class="tag">VsCode</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/WildCard/"><span class="tag">WildCard</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E9%98%BF%E9%87%8C%E4%BA%91/"><span class="tag">阿里云</span><span class="tag">2</span></a></div></div></div></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">归档</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2024/03/"><span class="level-start"><span class="level-item">三月 2024</span></span><span class="level-end"><span class="level-item tag">37</span></span></a></li><li><a class="level is-mobile" href="/archives/2024/02/"><span class="level-start"><span class="level-item">二月 2024</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><p class="is-size-7">© 2022~2024</p></div><div class="level-end"></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>
