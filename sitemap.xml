@@ -2,6 +2,60 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://7we.cn/alioss-picgo-typora/</loc>
+    
+    <lastmod>2024-03-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://7we.cn/apply-sora-beta-test/</loc>
+    
+    <lastmod>2024-03-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://7we.cn/chatgpt-talk-like-human/</loc>
+    
+    <lastmod>2024-03-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://7we.cn/chatgpt-cheat-in-tech-interview/</loc>
+    
+    <lastmod>2024-03-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://7we.cn/picgo-plugin-watermark/</loc>
+    
+    <lastmod>2024-03-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://7we.cn/how-to-filling-mini-program/</loc>
+    
+    <lastmod>2024-03-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://7we.cn/how-to-buy-spotify/</loc>
     
     <lastmod>2024-03-27</lastmod>
@@ -39,15 +93,6 @@
   
   <url>
     <loc>https://7we.cn/github-copilot-on-vscode/</loc>
-    
-    <lastmod>2024-03-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://7we.cn/alioss-picgo-typora/</loc>
     
     <lastmod>2024-03-27</lastmod>
     
@@ -281,15 +326,6 @@
   </url>
   
   <url>
-    <loc>https://7we.cn/picgo-plugin-watermark/</loc>
-    
-    <lastmod>2024-03-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://7we.cn/onlyfans-issues/</loc>
     
     <lastmod>2024-03-25</lastmod>
@@ -389,15 +425,6 @@
   </url>
   
   <url>
-    <loc>https://7we.cn/apply-sora-beta-test/</loc>
-    
-    <lastmod>2024-03-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://7we.cn/others/%E4%B8%80%E3%80%81%E5%85%A8%E6%96%B0%E8%AE%A4%E8%AF%86AI%E4%BB%A3%E5%86%99%EF%BC%9A.html</loc>
     
     <lastmod>2024-03-19</lastmod>
@@ -409,7 +436,7 @@
 
   <url>
     <loc>https://7we.cn/</loc>
-    <lastmod>2024-03-27</lastmod>
+    <lastmod>2024-03-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -417,105 +444,112 @@
   
   <url>
     <loc>https://7we.cn/tags/ChatGPT/</loc>
-    <lastmod>2024-03-27</lastmod>
+    <lastmod>2024-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://7we.cn/tags/MidJourney/</loc>
-    <lastmod>2024-03-27</lastmod>
+    <lastmod>2024-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://7we.cn/tags/Claude3/</loc>
-    <lastmod>2024-03-27</lastmod>
+    <lastmod>2024-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://7we.cn/tags/Typora/</loc>
-    <lastmod>2024-03-27</lastmod>
+    <lastmod>2024-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://7we.cn/tags/Onlyfans/</loc>
-    <lastmod>2024-03-27</lastmod>
+    <lastmod>2024-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://7we.cn/tags/WildCard/</loc>
-    <lastmod>2024-03-27</lastmod>
+    <lastmod>2024-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://7we.cn/tags/OpenAI/</loc>
-    <lastmod>2024-03-27</lastmod>
+    <lastmod>2024-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://7we.cn/tags/PicGo/</loc>
-    <lastmod>2024-03-27</lastmod>
+    <lastmod>2024-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://7we.cn/tags/Apple-Id/</loc>
-    <lastmod>2024-03-27</lastmod>
+    <lastmod>2024-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://7we.cn/tags/VsCode/</loc>
-    <lastmod>2024-03-27</lastmod>
+    <lastmod>2024-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://7we.cn/tags/GitHub-Copilot/</loc>
-    <lastmod>2024-03-27</lastmod>
+    <lastmod>2024-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://7we.cn/tags/%E9%98%BF%E9%87%8C%E4%BA%91/</loc>
-    <lastmod>2024-03-27</lastmod>
+    <lastmod>2024-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://7we.cn/tags/Grok/</loc>
-    <lastmod>2024-03-27</lastmod>
+    <lastmod>2024-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://7we.cn/tags/Patreon/</loc>
-    <lastmod>2024-03-27</lastmod>
+    <lastmod>2024-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://7we.cn/tags/Spotify/</loc>
-    <lastmod>2024-03-27</lastmod>
+    <lastmod>2024-03-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://7we.cn/tags/miniProgram/</loc>
+    <lastmod>2024-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -523,127 +557,120 @@
 
   
   <url>
-    <loc>https://7we.cn/c/%E5%85%B6%E4%BB%96/</loc>
-    <lastmod>2024-03-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://7we.cn/c/WildCard/</loc>
-    <lastmod>2024-03-27</lastmod>
+    <lastmod>2024-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://7we.cn/c/MidJourney/</loc>
-    <lastmod>2024-03-27</lastmod>
+    <lastmod>2024-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://7we.cn/c/Claude3/</loc>
-    <lastmod>2024-03-27</lastmod>
+    <lastmod>2024-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://7we.cn/c/Onlyfans/</loc>
-    <lastmod>2024-03-27</lastmod>
+    <lastmod>2024-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://7we.cn/c/OpenAI/</loc>
-    <lastmod>2024-03-27</lastmod>
+    <lastmod>2024-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://7we.cn/c/OpenAI/ChatGPT/</loc>
-    <lastmod>2024-03-27</lastmod>
+    <lastmod>2024-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://7we.cn/c/OpenAI/Sora/</loc>
-    <lastmod>2024-03-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://7we.cn/c/%E5%85%B6%E4%BB%96/PicGo/</loc>
-    <lastmod>2024-03-27</lastmod>
+    <lastmod>2024-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://7we.cn/c/Other/</loc>
-    <lastmod>2024-03-27</lastmod>
+    <lastmod>2024-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://7we.cn/c/Other/Grok/</loc>
-    <lastmod>2024-03-27</lastmod>
+    <lastmod>2024-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://7we.cn/c/Other/Typora/</loc>
-    <lastmod>2024-03-27</lastmod>
+    <lastmod>2024-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://7we.cn/c/Other/Spotify/</loc>
-    <lastmod>2024-03-27</lastmod>
+    <lastmod>2024-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://7we.cn/c/Other/Apple/</loc>
-    <lastmod>2024-03-27</lastmod>
+    <lastmod>2024-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://7we.cn/c/Other/Web%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/</loc>
-    <lastmod>2024-03-27</lastmod>
+    <lastmod>2024-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://7we.cn/c/Other/Youtube/</loc>
-    <lastmod>2024-03-27</lastmod>
+    <lastmod>2024-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://7we.cn/c/Other/%E5%B9%BB%E5%85%BD%E5%B8%95%E9%B2%81/</loc>
-    <lastmod>2024-03-27</lastmod>
+    <lastmod>2024-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://7we.cn/c/Other/Patreon/</loc>
-    <lastmod>2024-03-27</lastmod>
+    <lastmod>2024-03-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://7we.cn/c/Other/PicGo/</loc>
+    <lastmod>2024-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>

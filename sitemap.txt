@@ -1,9 +1,14 @@
+https://7we.cn/alioss-picgo-typora/
+https://7we.cn/apply-sora-beta-test/
+https://7we.cn/chatgpt-talk-like-human/
+https://7we.cn/chatgpt-cheat-in-tech-interview/
+https://7we.cn/picgo-plugin-watermark/
+https://7we.cn/how-to-filling-mini-program/
 https://7we.cn/how-to-buy-spotify/
 https://7we.cn/register-apple-id/
 https://7we.cn/register-youtube-premium/
 https://7we.cn/github-copilot-unsubscribe/
 https://7we.cn/github-copilot-on-vscode/
-https://7we.cn/alioss-picgo-typora/
 https://7we.cn/setup-palu-server-on-aliyun/
 https://7we.cn/register-patreon/
 https://7we.cn/mask-grok-open-source/
@@ -29,7 +34,6 @@ https://7we.cn/register-claude3/
 https://7we.cn/register-claude3-anthropic/
 https://7we.cn/register-chatgpt-without-phone/
 https://7we.cn/register-chatgpt-with-gmail/
-https://7we.cn/picgo-plugin-watermark/
 https://7we.cn/onlyfans-issues/
 https://7we.cn/how-to-write-dissertation/
 https://7we.cn/how-to-search-blogger-on-onlyfans/
@@ -41,7 +45,6 @@ https://7we.cn/chatgpt-suspicious-login/
 https://7we.cn/chatgpt-continue-generating/
 https://7we.cn/can-chatgpt-plus-be-subscribed-with-domestic-credit-cards/
 https://7we.cn/browser-settings-for-overseas-network/
-https://7we.cn/apply-sora-beta-test/
 https://7we.cn/others/%E4%B8%80%E3%80%81%E5%85%A8%E6%96%B0%E8%AE%A4%E8%AF%86AI%E4%BB%A3%E5%86%99%EF%BC%9A.html
 https://7we.cn/
 https://7we.cn/tags/ChatGPT/
@@ -59,7 +62,7 @@ https://7we.cn/tags/%E9%98%BF%E9%87%8C%E4%BA%91/
 https://7we.cn/tags/Grok/
 https://7we.cn/tags/Patreon/
 https://7we.cn/tags/Spotify/
-https://7we.cn/c/%E5%85%B6%E4%BB%96/
+https://7we.cn/tags/miniProgram/
 https://7we.cn/c/WildCard/
 https://7we.cn/c/MidJourney/
 https://7we.cn/c/Claude3/
@@ -67,7 +70,6 @@ https://7we.cn/c/Onlyfans/
 https://7we.cn/c/OpenAI/
 https://7we.cn/c/OpenAI/ChatGPT/
 https://7we.cn/c/OpenAI/Sora/
-https://7we.cn/c/%E5%85%B6%E4%BB%96/PicGo/
 https://7we.cn/c/Other/
 https://7we.cn/c/Other/Grok/
 https://7we.cn/c/Other/Typora/
@@ -77,3 +79,4 @@ https://7we.cn/c/Other/Web%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/
 https://7we.cn/c/Other/Youtube/
 https://7we.cn/c/Other/%E5%B9%BB%E5%85%BD%E5%B8%95%E9%B2%81/
 https://7we.cn/c/Other/Patreon/
+https://7we.cn/c/Other/PicGo/
