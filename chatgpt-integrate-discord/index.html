@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>ChatGPT与Discord的完美结合——团队协作的得力助手 - 火哥研习社</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="火哥研习社"><meta name="msapplication-TileImage" content="/img/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="火哥研习社"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="ChatGPT与Discord的完美结合——团队协作的得力助手"><meta property="og:type" content="blog"><meta property="og:title" content="ChatGPT与Discord的完美结合——团队协作的得力助手"><meta property="og:url" content="https://7we.cn/chatgpt-integrate-discord/"><meta property="og:site_name" content="火哥研习社"><meta property="og:description" content="ChatGPT与Discord的完美结合——团队协作的得力助手"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240330015357503.png"><meta property="article:published_time" content="2024-03-29T12:51:53.000Z"><meta property="article:modified_time" content="2024-03-29T17:55:20.848Z"><meta property="article:author" content="火哥研习社"><meta property="article:tag" content="ChatGPT"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240330015357503.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://7we.cn/chatgpt-integrate-discord/"},"headline":"ChatGPT与Discord的完美结合——团队协作的得力助手","image":["https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240330015357503.png"],"datePublished":"2024-03-29T12:51:53.000Z","dateModified":"2024-03-29T17:55:20.848Z","author":{"@type":"Person","name":"火哥研习社"},"publisher":{"@type":"Organization","name":"火哥研习社","logo":{"@type":"ImageObject"}},"description":"ChatGPT与Discord的完美结合——团队协作的得力助手"}</script><link rel="canonical" href="https://7we.cn/chatgpt-integrate-discord/"><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><script>var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?8bddba9cb2b7bd792530388f5dee9014";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();</script><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><script data-ad-client="3717344278068553" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" async></script><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/">火哥研习社</a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">首页</a><a class="navbar-item" href="/c/WildCard/">WildCard虚拟信用卡</a><a class="navbar-item" href="/c/OpenAI/ChatGPT/">ChatGPT</a><a class="navbar-item" href="/c/OpenAI/Sora/">Sora</a><a class="navbar-item" href="/c/Onlyfans/">OnlyFans</a><a class="navbar-item" href="/c/MidJourney/">Midjourney</a><a class="navbar-item" href="/c/Claude3/">Claude3</a></div><div class="navbar-end"><a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><div class="card-image"><span class="image is-7by3"><img class="fill" src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240330015357503.png" alt="ChatGPT与Discord的完美结合——团队协作的得力助手"></span></div><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2024-03-29T12:51:53.000Z" title="2024/3/29 20:51:53">2024-03-29</time>发表</span><span class="level-item"><a class="link-muted" href="/c/OpenAI/">OpenAI</a><span> / </span><a class="link-muted" href="/c/OpenAI/ChatGPT/">ChatGPT</a></span><span class="level-item">13 分钟读完 (大约1924个字)</span></div></div><h1 class="title is-3 is-size-4-mobile">ChatGPT与Discord的完美结合——团队协作的得力助手</h1><div class="content"><p>本文将教你如何集成Discord Bot，助力团队在工作中实现更高效的沟通与协作。通过充分发挥ChatGPT的潜力，进一步提升工作效率和团队协作能力。无需编写任何代码即可完成本文所述的操作，进行个性化定制只需对参数进行微调即可。</p>
+<span id="more"></span>
+
+<h2><span id="精选文章">精选文章</span></h2><table>
+<thead>
+<tr>
+<th align="left">类别</th>
+<th align="left">教程</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Claude</td>
+<td align="left"><a href="https://7we.cn/resolve-claude3-banned/">如何解决Claude账号被封，及Claude3使用方法</a><br><a href="https://7we.cn/register-claude3/"><font color="ff8000">Claude3注册教程，解决Claude手机号验证问题</font></a><br> <a href="https://7we.cn/register-claude3-anthropic/">Anthropic官网提供Claude3注册及使用教程|以及如何预防封号</a></td>
+</tr>
+<tr>
+<td align="left">Sora</td>
+<td align="left"><a href="https://7we.cn/how-to-use-sora/"><font color="ff8000">详细教程与使用指南助您轻松上手Sora</font></a><br><a href="https://7we.cn/what-is-sora/"><font color="ff8000">OpenAI Sora是什么？Sora到底能做什么？它与其他类似技术有什么区别</font></a></td>
+</tr>
+<tr>
+<td align="left">ChatGPT</td>
+<td align="left"><a href="https://7we.cn/subscribe-chatgpt-plus-in-five-minutes/"><font color="ff8000">国内升级GPT-Plus教程，订阅GTP4-0</font></a><br><a href="https://7we.cn/register-chatgpt-without-phone/"><font color="ff8000">国内无需手机验证码获取GPT账号教程</font></a><br><a href="https://7we.cn/register-apple-id/"><font color="ff8000">【2024亲测】保姆级获取美区Apple Id教程</font></a></td>
+</tr>
+<tr>
+<td align="left">Onlyfans</td>
+<td align="left"><a href="https://7we.cn/register-onlyfans/"><font color="ff8000">Onlyfans-注册以及充值、订阅教程</font></a><br><a href="https://7we.cn/how-to-search-blogger-on-onlyfans/"><font color="ff8000">【2024亲测】Onlyfans搜索博主？如何在OnlyFans搜索HongkongDoll</font></a></td>
+</tr>
+<tr>
+<td align="left">Midjourney</td>
+<td align="left"><a href="https://7we.cn/subscribe-midjourney/"><font color="ff8000">【一看就会】五分钟完成MidJourney订阅</font></a></td>
+</tr>
+<tr>
+<td align="left">WildCard</td>
+<td align="left"><a href="https://7we.cn/register-wildcard/"><font color="ff8000">WildCard虚拟信用卡注册保姆级教程</font></a><br><a href="https://7we.cn/wildcard-info/"><font color="ff8000">WildCard虚拟信用卡平台详解</font></a></td>
+</tr>
+<tr>
+<td align="left">其他</td>
+<td align="left"><a href="https://7we.cn/register-patreon/"><font color="ff8000">【新手小白教程】2024最新：如何轻松订阅Patreon及其支付、充值全攻略</font></a><br><a href="https://7we.cn/register-youtube-premium/"><font color="ff8000">【新手小白】如何订阅Youtube Premium？Youtube Premium购买教程（2024最新）</font></a></td>
+</tr>
+</tbody></table>
+<h2><span id="方案介绍"><strong>方案介绍</strong></span></h2><blockquote>
+<p>如果在集成过程中遇到问题，可以在<a target="_blank" rel="noopener" href="https://github.com/TheExplainthis/ChatGPT-Discord-Bot/issues">ChatGPT-Discord-Bot 的 Issues</a> 中上报，作者会定期在那边回复问题</p>
+</blockquote>
+<p>开源代码：<a target="_blank" rel="noopener" href="https://github.com/TheExplainthis/ChatGPT-Discord-Bot">ChatGPT-Discord-Bot</a></p>
+<p>在Discord的每个频道中导入ChatGPT Bot。只需在输入框中输入&#x2F;chat，便会自动出现&#x2F;chat message的关键字，你只需直接输入文字即可与ChatGPT进行互动。此外，ChatGPT-Discord-Bot也完成了DALL·E 2模型的串接，你只需输入&#x2F;imagine prompt，便能通过文字生成图片，为您的沟通与协作带来更多可能性。</p>
+<p>具体效果如下图所示：</p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240330005021865.png" alt="image-20240330005021865"></p>
+<h2><span id="安装步骤">安装步骤</span></h2><h3><span id="获取openai-token">获取OpenAI Token</span></h3><p>如果你还没有GPT账号，请移步：<a href="https://7we.cn/register-chatgpt-without-phone/"><font color="ff8000">国内无需手机验证码获取GPT账号教程</font></a>。</p>
+<ol>
+<li>在 <a target="_blank" rel="noopener" href="https://openai.com/api/"><strong>OpenAI</strong></a> 平台中登录后进入管理界面。</li>
+</ol>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240330005641381.png" alt="image-20240330005641381"></p>
+<ol start="2">
+<li><p>鼠标移动到左侧菜单栏，在弹出的菜单栏中点击「<strong>API keys</strong> 」按钮。</p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240330005829004.png" alt="image-20240330005829004"></p>
+</li>
+<li><p>点击中间的 「<strong>Create new secret key</strong> 」</p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240330005945268.png" alt="image-20240330005945268"></p>
+<p>注意手机号如果没有验证无法创建Secret key。</p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240330010051627.png" alt="image-20240330010051627"></p>
+</li>
+<li><p>复制弹出窗口中的token并妥善保存。API 有免费额度，详情请看 <a target="_blank" rel="noopener" href="https://openai.com/api/pricing/">OpenAI Pricing</a></p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240330010247823.png" alt="image-20240330010247823"></p>
+</li>
+</ol>
+<h3><span id="获取discord-token">获取Discord Token</span></h3><ol>
+<li><p>登录 <a target="_blank" rel="noopener" href="https://discord.com/developers/applications">Discord Developer</a></p>
+</li>
+<li><p>创建机器人</p>
+<ul>
+<li><p>进入左边 Applications，点击右上方 「<strong>New Application</strong> 」 并输入 机器人 的名称 ，点击「<strong>Create</strong> 」按钮后进入新页面。</p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240330010632832.png" alt="image-20240330010632832"></p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240330010651451.png" alt="image-20240330010651451"></p>
+</li>
+<li><p>等机器人创建完成之后，点击左侧菜单中的「<strong>Bot</strong> 」按钮并点击页面右侧的「<strong>Add Bot</strong> 」按钮</p>
+</li>
+</ul>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240330010946319.png" alt="image-20240330010946319"></p>
+<ul>
+<li>在弹出的页面中点击「<strong>Yes, do it!</strong> 」按钮确认创建机器人。</li>
+</ul>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240330011014729.png" alt="image-20240330011014729"></p>
+<ul>
+<li>创建完成之后，在页面中选择「<strong>View Token</strong>」，在弹出的页面中复制好token并妥善保存。</li>
+</ul>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240330011233829.png" alt="image-20240330011233829"></p>
+<ul>
+<li>在页面的下方打开以下选项：MESSAGE CONTENT INTENT，并点击「<strong>Save Change</strong>」按钮保存修改。</li>
+</ul>
+</li>
+</ol>
+<h3><span id="chatgpt-discord-bot部署">ChatGPT-Discord-Bot部署</span></h3><ol>
+<li><p>Fork Github 仓库</p>
+<p>登录 <a target="_blank" rel="noopener" href="https://github.com/">GitHub</a>后进入<a target="_blank" rel="noopener" href="https://github.com/TheExplainthis/ChatGPT-Discord-Bot">ChatGPT-Discord-Bot</a>仓库，<code>Star</code> 支持开发者并<code>Fork</code> 复制代码到自己的仓库。</p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240330012038258.png" alt="image-20240330012038258"></p>
+</li>
+<li><p>部署到免费空间</p>
+<ul>
+<li>进入 <a target="_blank" rel="noopener" href="https://replit.com/">Replit</a>点击「<strong>Sign Up</strong> 」按钮，并用GitHub账号授权登录。</li>
+</ul>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240330012218561.png" alt="image-20240330012218561"></p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240330012306198.png" alt="image-20240330012306198"></p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240330012350595.png" alt="image-20240330012350595"></p>
+<ul>
+<li>进入主页后，点击页面中的「<strong>Create Repl</strong> 」按钮，在弹窗中点击「<strong>Import from Github</strong> 」按钮。</li>
+</ul>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240330012548380.png" alt="image-20240330012548380"></p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240330012648039.png" alt="image-20240330012648039"></p>
+<p>如果还没有加入GitHub仓库，需要点击下图中的「<strong>Connect your GitHub account</strong> 」。</p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240330012815612.png" alt="image-20240330012815612"></p>
+<p>在弹出的新页面中勾选 <code>Only select repositories</code> 选择 <code>ChatGPT-Discord-Bot</code>并点击「<strong>Install &amp; Authorize</strong> 」按键进行授权。</p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240330012952709.png" alt="image-20240330012952709"></p>
+<p>返回Replit页面，在弹窗中选择刚Fork的分支，并点击「<strong>Import from GitHub</strong> 」按钮导入。</p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240330013310230.png" alt="image-20240330013310230"></p>
+</li>
+</ol>
+<h3><span id="chatgpt-discord-bot运行">ChatGPT-Discord-Bot运行</span></h3><ol>
+<li><p>设置环境变量</p>
+<ul>
+<li>在Replit左侧菜单中<code>Tools</code>模块中找到并点击「<strong>Secrets</strong> 」按钮。</li>
+</ul>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240330013746852.png" alt="image-20240330013746852"></p>
+<p>在右侧界面中点击「<strong>New Secret</strong> 」按钮添加以下环境变量。</p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240330014005097.png" alt="image-20240330014005097"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">OpenAI API Token：</span><br><span class="line">	key: OPENAI_API</span><br><span class="line">	value: 由上方步骤获取的token</span><br><span class="line">欲选择的模型：</span><br><span class="line">	key: OPENAI_MODEL_ENGINE</span><br><span class="line">	value: gpt-3.5-turbo</span><br><span class="line">ChatGPT 要让助理扮演的角色词</span><br><span class="line">	key: SYSTEM_MESSAGE</span><br><span class="line">	value: You are a helpful assistant.</span><br><span class="line">Discord Token:</span><br><span class="line">	key: DISCORD_TOKEN</span><br><span class="line">	value: 由上方步骤获取的token</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240330014342997.png" alt="image-20240330014342997"></p>
+</li>
+<li><p>执行代码</p>
+<ul>
+<li>点击上方的 「<strong>Run</strong> 」按钮</li>
+</ul>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240330014447227.png" alt="image-20240330014447227"></p>
+<ul>
+<li><p>成功后右边界面会显示 <code>Hello. I am alive!</code>，将界面中的网址复制下来。</p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240330014558807.png" alt="image-20240330014558807"></p>
+</li>
+</ul>
+</li>
+<li><p>CronJob 定时发送请求</p>
+<ul>
+<li>注册或登入 <a target="_blank" rel="noopener" href="https://cron-job.org/en/">cron-job.org</a>后，点击界面右侧的「<strong>CREATE CRONJOB</strong> 」按钮</li>
+</ul>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240330014728511.png" alt="image-20240330014728511"></p>
+<ul>
+<li><p>在<code>Title</code>输入 <code>ChatGPT-Discord-Bot</code>并将上一步获取到的链接复制进去，运行时间设置<code>5分钟</code>，点击「<strong>CREATE</strong> 」按钮保存。</p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240330014916123.png" alt="image-20240330014916123"></p>
+</li>
+</ul>
+</li>
+</ol>
+<h2><span id="指令">指令</span></h2><table>
+<thead>
+<tr>
+<th>指令</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>&#x2F;chat</td>
+<td>在输入框直接输入 &#x2F;chat 会后缀 message 直接输入文字，即可调用 ChatGPT 模型。</td>
+</tr>
+<tr>
+<td>&#x2F;reset</td>
+<td>ChatGPT 会记住前十次的问答纪录，调用此指令则会清除。</td>
+</tr>
+<tr>
+<td>&#x2F;imagine</td>
+<td>在输入框输入 &#x2F;imagine 会后缀 prompt 直接输入文字，会调用 DALL·E 2 模型，即可生成图像。</td>
+</tr>
+</tbody></table>
+<p>至此，集成操作完成。</p>
+<blockquote>
+<p>原文链接：<a href="https://7we.cn/chatgpt-integrate-discord/">ChatGPT与Discord的完美结合——团队协作的得力助手</a></p>
+</blockquote>
+<hr>
+<p><strong>你好，我是火哥！</strong></p>
+<p>亲爱的读者你好，我是<strong>火哥</strong>，一个乐于分享技术类干货的博主。 最新原创的文章都先发布在公众号，欢迎关注哦~</p>
+<p><strong>扫描下方二维码</strong>，带你第一时间了解ChatGPT、Sora、Midjourney最新动态！</p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/9475746462373236362612.png" alt="9475746462373236362612"></p>
+</div><div class="article-licensing box"><div class="licensing-title"><p>ChatGPT与Discord的完美结合——团队协作的得力助手</p><p><a href="https://7we.cn/chatgpt-integrate-discord/">https://7we.cn/chatgpt-integrate-discord/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>火哥研习社</p></div></div><div class="level-item is-narrow"><div><h6>发布于</h6><p>2024-03-29</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2024-03-30</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/ChatGPT/">ChatGPT</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/chatgpt-cheat-in-tech-interview/"><span class="level-item">利用GPT在技术面试中作弊，面试官竟无一察觉</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="/img/avatar.jpg" alt="火哥"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">火哥</p><p class="is-size-6 is-block">一个乐于分享技术类干货的博主</p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">48</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">17</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">16</p></a></div></div></nav></div></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">分类</h3><ul class="menu-list"><li><a class="level is-mobile" href="/c/Claude3/"><span class="level-start"><span class="level-item">Claude3</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/c/MidJourney/"><span class="level-start"><span class="level-item">MidJourney</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile" href="/c/Onlyfans/"><span class="level-start"><span class="level-item">Onlyfans</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/c/OpenAI/"><span class="level-start"><span class="level-item">OpenAI</span></span><span class="level-end"><span class="level-item tag">24</span></span></a><ul><li><a class="level is-mobile" href="/c/OpenAI/ChatGPT/"><span class="level-start"><span class="level-item">ChatGPT</span></span><span class="level-end"><span class="level-item tag">19</span></span></a></li><li><a class="level is-mobile" href="/c/OpenAI/Sora/"><span class="level-start"><span class="level-item">Sora</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li></ul></li><li><a class="level is-mobile" href="/c/Other/"><span class="level-start"><span class="level-item">Other</span></span><span class="level-end"><span class="level-item tag">11</span></span></a><ul><li><a class="level is-mobile" href="/c/Other/Apple/"><span class="level-start"><span class="level-item">Apple</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/c/Other/Grok/"><span class="level-start"><span class="level-item">Grok</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/c/Other/Patreon/"><span class="level-start"><span class="level-item">Patreon</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/c/Other/PicGo/"><span class="level-start"><span class="level-item">PicGo</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/c/Other/Spotify/"><span class="level-start"><span class="level-item">Spotify</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/c/Other/Typora/"><span class="level-start"><span class="level-item">Typora</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/c/Other/Web%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/"><span class="level-start"><span class="level-item">Web前端技术</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/c/Other/Youtube/"><span class="level-start"><span class="level-item">Youtube</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/c/Other/%E5%B9%BB%E5%85%BD%E5%B8%95%E9%B2%81/"><span class="level-start"><span class="level-item">幻兽帕鲁</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li><li><a class="level is-mobile" href="/c/WildCard/"><span class="level-start"><span class="level-item">WildCard</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li></ul></div></div></div><div class="column-right-shadow is-hidden-widescreen"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3"><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">目录</h3><ul class="menu-list"><li><a class="level is-mobile" href="#"><span class="level-left"><span class="level-item">1</span><span class="level-item">精选文章</span></span></a></li><li><a class="level is-mobile" href="#"><span class="level-left"><span class="level-item">2</span><span class="level-item">方案介绍</span></span></a></li><li><a class="level is-mobile" href="#"><span class="level-left"><span class="level-item">3</span><span class="level-item">安装步骤</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#"><span class="level-left"><span class="level-item">3.1</span><span class="level-item">获取OpenAI Token</span></span></a></li><li><a class="level is-mobile" href="#"><span class="level-left"><span class="level-item">3.2</span><span class="level-item">获取Discord Token</span></span></a></li><li><a class="level is-mobile" href="#"><span class="level-left"><span class="level-item">3.3</span><span class="level-item">ChatGPT-Discord-Bot部署</span></span></a></li><li><a class="level is-mobile" href="#"><span class="level-left"><span class="level-item">3.4</span><span class="level-item">ChatGPT-Discord-Bot运行</span></span></a></li></ul></li><li><a class="level is-mobile" href="#"><span class="level-left"><span class="level-item">4</span><span class="level-item">指令</span></span></a></li></ul></div></div><style>#toc .menu-list > li > a.is-active + .menu-list { display: block; }#toc .menu-list > li > a + .menu-list { display: none; }</style><script src="/js/toc.js" defer></script></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-03-29T12:51:53.000Z">2024-03-29</time></p><p class="title"><a href="/chatgpt-integrate-discord/">ChatGPT与Discord的完美结合——团队协作的得力助手</a></p><p class="categories"><a href="/c/OpenAI/">OpenAI</a> / <a href="/c/OpenAI/ChatGPT/">ChatGPT</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-03-28T12:51:53.000Z">2024-03-28</time></p><p class="title"><a href="/chatgpt-cheat-in-tech-interview/">利用GPT在技术面试中作弊，面试官竟无一察觉</a></p><p class="categories"><a href="/c/OpenAI/">OpenAI</a> / <a href="/c/OpenAI/ChatGPT/">ChatGPT</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-03-28T12:51:53.000Z">2024-03-28</time></p><p class="title"><a href="/chatgpt-talk-like-human/">如何让ChatGPT说话更像人类</a></p><p class="categories"><a href="/c/OpenAI/">OpenAI</a> / <a href="/c/OpenAI/ChatGPT/">ChatGPT</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-03-28T03:49:50.000Z">2024-03-28</time></p><p class="title"><a href="/how-to-filling-mini-program/">微信小程序备案流程详细操作指南</a></p><p class="categories"><a href="/c/Other/">Other</a> / <a href="/c/Other/Web%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/">Web前端技术</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-03-28T00:51:53.000Z">2024-03-28</time></p><p class="title"><a href="/how-to-buy-spotify/">2024年Spotify注册、选区及充值使用全攻略</a></p><p class="categories"><a href="/c/Other/">Other</a> / <a href="/c/Other/Spotify/">Spotify</a></p></div></article></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><p class="is-size-7">© 2022~2024</p></div><div class="level-end"></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>
