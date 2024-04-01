@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>利用GPTs，打造你的专属AI聊天机器人 - 火哥研习社</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="火哥研习社"><meta name="msapplication-TileImage" content="/img/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="火哥研习社"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="利用GPTs，打造你的专属AI聊天机器人"><meta property="og:type" content="blog"><meta property="og:title" content="利用GPTs，打造你的专属AI聊天机器人"><meta property="og:url" content="https://7we.cn/chatgpt-create-gpts/"><meta property="og:site_name" content="火哥研习社"><meta property="og:description" content="利用GPTs，打造你的专属AI聊天机器人"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://mvkersc.oss-cn-beijing.aliyuncs.com/Snipaste_2024-04-01_23-58-29.png"><meta property="article:published_time" content="2024-04-01T12:51:53.000Z"><meta property="article:modified_time" content="2024-04-01T16:14:18.343Z"><meta property="article:author" content="火哥研习社"><meta property="article:tag" content="ChatGPT"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://mvkersc.oss-cn-beijing.aliyuncs.com/Snipaste_2024-04-01_23-58-29.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://7we.cn/chatgpt-create-gpts/"},"headline":"利用GPTs，打造你的专属AI聊天机器人","image":["https://mvkersc.oss-cn-beijing.aliyuncs.com/Snipaste_2024-04-01_23-58-29.png"],"datePublished":"2024-04-01T12:51:53.000Z","dateModified":"2024-04-01T16:14:18.343Z","author":{"@type":"Person","name":"火哥研习社"},"publisher":{"@type":"Organization","name":"火哥研习社","logo":{"@type":"ImageObject"}},"description":"利用GPTs，打造你的专属AI聊天机器人"}</script><link rel="canonical" href="https://7we.cn/chatgpt-create-gpts/"><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><script>var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?8bddba9cb2b7bd792530388f5dee9014";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();</script><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><script data-ad-client="3717344278068553" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" async></script><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/">火哥研习社</a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">首页</a><a class="navbar-item" href="/c/WildCard/">WildCard虚拟信用卡</a><a class="navbar-item" href="/c/OpenAI/ChatGPT/">ChatGPT</a><a class="navbar-item" href="/c/OpenAI/Sora/">Sora</a><a class="navbar-item" href="/c/Onlyfans/">OnlyFans</a><a class="navbar-item" href="/c/MidJourney/">Midjourney</a><a class="navbar-item" href="/c/Claude3/">Claude3</a></div><div class="navbar-end"><a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><div class="card-image"><span class="image is-7by3"><img class="fill" src="https://mvkersc.oss-cn-beijing.aliyuncs.com/Snipaste_2024-04-01_23-58-29.png" alt="利用GPTs，打造你的专属AI聊天机器人"></span></div><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2024-04-01T12:51:53.000Z" title="2024/4/1 20:51:53">2024-04-01</time>发表</span><span class="level-item"><a class="link-muted" href="/c/OpenAI/">OpenAI</a><span> / </span><a class="link-muted" href="/c/OpenAI/ChatGPT/">ChatGPT</a></span><span class="level-item">19 分钟读完 (大约2904个字)</span></div></div><h1 class="title is-3 is-size-4-mobile">利用GPTs，打造你的专属AI聊天机器人</h1><div class="content"><p>在2023年11月的「OpenAI Devday」大会上，OpenAI再度带来了一系列令人瞩目的新功能，其中ChatGPT方面的突破尤为引人关注。而GPTs的亮相，不仅标志着个性化AI时代的到来，更为开发者和普通用户提供了前所未有的便利。接下来，我们一起深入了解GPTs是什么，能帮助我们做什么。</p>
+<span id="more"></span>
+
+<h2><span id="精选文章">精选文章</span></h2><table>
+<thead>
+<tr>
+<th align="left">类别</th>
+<th align="left">教程</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Claude</td>
+<td align="left"><a href="https://7we.cn/resolve-claude3-banned/">如何解决Claude账号被封，及Claude3使用方法</a><br><a href="https://7we.cn/register-claude3/"><font color="ff8000">Claude3注册教程，解决Claude手机号验证问题</font></a><br> <a href="https://7we.cn/register-claude3-anthropic/">Anthropic官网提供Claude3注册及使用教程|以及如何预防封号</a></td>
+</tr>
+<tr>
+<td align="left">Sora</td>
+<td align="left"><a href="https://7we.cn/how-to-use-sora/"><font color="ff8000">详细教程与使用指南助您轻松上手Sora</font></a><br><a href="https://7we.cn/what-is-sora/"><font color="ff8000">OpenAI Sora是什么？Sora到底能做什么？它与其他类似技术有什么区别</font></a></td>
+</tr>
+<tr>
+<td align="left">ChatGPT</td>
+<td align="left"><a href="https://7we.cn/subscribe-chatgpt-plus-in-five-minutes/"><font color="ff8000">国内升级GPT-Plus教程，订阅GTP4-0</font></a><br><a href="https://7we.cn/register-chatgpt-without-phone/"><font color="ff8000">国内无需手机验证码获取GPT账号教程</font></a><br><a href="https://7we.cn/register-apple-id/"><font color="ff8000">【2024亲测】保姆级获取美区Apple Id教程</font></a></td>
+</tr>
+<tr>
+<td align="left">Onlyfans</td>
+<td align="left"><a href="https://7we.cn/register-onlyfans/"><font color="ff8000">Onlyfans-注册以及充值、订阅教程</font></a><br><a href="https://7we.cn/how-to-search-blogger-on-onlyfans/"><font color="ff8000">【2024亲测】Onlyfans搜索博主？如何在OnlyFans搜索HongkongDoll</font></a></td>
+</tr>
+<tr>
+<td align="left">Midjourney</td>
+<td align="left"><a href="https://7we.cn/subscribe-midjourney/"><font color="ff8000">【一看就会】五分钟完成MidJourney订阅</font></a></td>
+</tr>
+<tr>
+<td align="left">WildCard</td>
+<td align="left"><a href="https://7we.cn/register-wildcard/"><font color="ff8000">WildCard虚拟信用卡注册保姆级教程</font></a><br><a href="https://7we.cn/wildcard-info/"><font color="ff8000">WildCard虚拟信用卡平台详解</font></a></td>
+</tr>
+<tr>
+<td align="left">其他</td>
+<td align="left"><a href="https://7we.cn/register-patreon/"><font color="ff8000">【新手小白教程】2024最新：如何轻松订阅Patreon及其支付、充值全攻略</font></a><br><a href="https://7we.cn/register-youtube-premium/"><font color="ff8000">【新手小白】如何订阅Youtube Premium？Youtube Premium购买教程（2024最新）</font></a></td>
+</tr>
+</tbody></table>
+<h2><span id="gpts-是什么">GPTs 是什么？</span></h2><p>GPTs是一种可以赋予了使用者量身打造专属AI助理能力的工具。使用者只需根据个人需求和偏好，便能轻松创建出一个完全定制化的ChatGPT。无论你需要一个擅长整理电子邮件的得力助手，还是一个能随时激发创意灵感的贴心伙伴，GPTs都能将其变为现实。</p>
+<p>这种个性化的AI不仅极大地提升了工作效率，更为日常生活带来了前所未有的便捷。无需深厚的编程技能或技术背景，使用者只需在ChatGPT的界面通过简单的操作便能轻松创建并定制自己的GPTs，进而在各种场景中灵活应用。</p>
+<p>GPTs的推出无疑标志着AI技术的一大飞跃。它将AI的应用范围从专业领域拓展到了普通大众的日常生活之中。OpenAI已经推出了多款现成的GPTs供广大用户选择和使用，如“谈判专家”、“游戏时光”等，这些GPTs各具特色，功能丰富，为用户带来了更多元化的体验。</p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240401221522467.png" alt="image-20240401221522467"></p>
+<h2><span id="gpts-有什么功能">GPTs 有什么功能？</span></h2><p>那么GPTs到底都有哪些功能呢？</p>
+<p>用户现在可以通过上传个人资料来自定义GPTs，从而打造出更加符合个人或专业需求的AI助手。例如，你可以创建一个专注于面试练习的机器人，并上传大量相关的面试资料来对其进行专门训练，使其在面试准备方面成为你的得力助手。除了创建和使用自己的GPTs外，你还可以将它们分享给他人或者探索并使用其他用户创建的GPTs，从而进一步丰富你的AI体验。</p>
+<p>目前GPTs的使用仅限于ChatGPT Plus的用户。因此，无论你是希望亲手打造个性化的GPTs还是希望体验他人创作的GPTs，都需要先升级至ChatGPT Plus。</p>
+<p>如果你不知道如何升级到Plus服务，可以按照<a href="https://7we.cn/subscribe-chatgpt-plus-in-five-minutes/">Plus升级教程</a>升级。若还没有GPT账号，那么请移步<a href="https://7we.cn/register-chatgpt-without-phone/">获取GPT账号Pronton版</a>或<a href="https://7we.cn/register-chatgpt-with-gmail/">获取GPT账号Gmail版</a>。</p>
+<p>另外，OpenAI将推出GPT Store，这一平台将类似于应用商店的概念，允许用户提供分享他们的GPTs。在GPT Store中，用户不仅能够展示自己创建的GPTs，还可能通过实施收益分润制度，将创意转化为实际收益。</p>
+<h2><span id="打造一个履历修改助手gpts">打造一个「履历修改助手」GPTs</span></h2><h3><span id="1-定义gpts-目标">1、定义GPTs 目标</span></h3><p>首先，你得思考你想要创建什么功能的GPTs。我们尝试创建一个“英文履历助手”的GPTs例子，它将专注于为用户提供履历撰写的专业建议，并且能够针对用户的个人经历进行智能化的改写，帮助用户打造出更具吸引力、更符合职业需求的英文履历。</p>
+<h3><span id="2-创建gpts">2、创建GPTs</span></h3><p>如果你的账户不是Plus账户，请先参考Plus升级教程](<a href="https://7we.cn/subscribe-chatgpt-plus-in-five-minutes/)%E8%BF%9B%E8%A1%8C%E5%8D%87%E7%BA%A7%E3%80%82%E4%BB%A5%E4%B8%8B%E6%98%AF%E8%BF%9B%E5%85%A5">https://7we.cn/subscribe-chatgpt-plus-in-five-minutes/)进行升级。以下是进入</a> GPTs 创建界面的步骤：</p>
+<p>点击左侧菜单中的「Explore」</p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240401222956084.png" alt="image-20240401222956084"></p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240401223023744.png" alt="image-20240401223023744"></p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240401223039698.png" alt="image-20240401223039698"></p>
+<p>页面分为左右两栏，左侧为创建区域，右侧为预览区域。左侧区域内的「Create」和「Configure」两个功能说明如下：</p>
+<ul>
+<li>「Create」：这里是GPTs的创建界面，你可以输入类似于“我要创建一个履历机器人”的指令，GPT Builder 会根据你的指令创建GPTs。</li>
+<li>「Configure」：这里是GPTs的具体设置界面，在这个界面里你可以为你的GPT命名并添加描述、设定具体的指令和对话开端、上传相关的知识文件，这些文件将成为GPT回答问题的资料库。此外，你还可以设定GPTs的能力范围，比如是否允许其浏览网页、使用DALL·E生成图片或解析代码，以满足你在不同场景下的需求。</li>
+</ul>
+<p>在右侧的预览区内，你可以实时与你创建的GPTs进行对话以测试效果。</p>
+<h3><span id="3-输入需求">3、输入需求</span></h3><p>创建GPTs的过程与ChatGPT对话过程类似，GPT Builder会询问你期望的GPTs运作方式。例如，当你在左侧的输入框中键入“我要创建一个履历机器人”的指令时，GPT Builder会根据你的指令进行反馈，为你提供创建过程中的指导与建议。</p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240401223946689.png" alt="image-20240401223946689"></p>
+<p>输入之后， GPT Builder 开始一步步带领设定机器人，从建议名称开始，还设计出一个代表性的机器人头像。</p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240401224049045.png" alt="image-20240401224049045"></p>
+<p>GPT Builder通过提出一系列问题来帮助你进一步完善你的机器人。以上面的例子为例，GPT Builder会询问你希望“履历机器人”专注于哪些具体方面，让你能够更深入地思考机器人的功能和定位，让你在不断地调整和改进中，打造出更加符合自己需求的聊天机器人。</p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240401224254547.png" alt="image-20240401224254547"></p>
+<p>在创建GPTs的过程中，你可以在右侧的预览框中与你的GPTs实时对话来检测效果。在GPTs的建设过程中，如果你对GPT Builder的当前成果感到不满意，</p>
+<p>你可以在左侧的界面中向GPT Builder提供具体的指示进行输入与调整，GPT Builder会不断完善你的GPTs，以确保其更加符合你的需求和期望。</p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240401224630278.png" alt="image-20240401224630278"></p>
+<h3><span id="4-自定义设置">4、自定义设置</span></h3><p>在创建过程中，你也可以在左侧视图中的「Configure」页签中进行细致的设置。</p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240401224752673.png" alt="image-20240401224752673"></p>
+<p>「Configure」中各个选项释义：</p>
+<p><strong>Name</strong>：设置GPTs的名字</p>
+<p><strong>Description</strong>: GPTs的详情描述，比如功能用途等。</p>
+<p><strong>Instructions</strong>: 类似于在 ChatGPT 中输入的指令。在与 GPT Builder 互动时，GPT Builder 也是根据提出的需求来调整在“Instructions”这里的指令 </p>
+<p><strong>Conversation</strong> starters: 在这里设置聊天机器人开始对话时的预设文字 </p>
+<p><strong>Knowledge</strong>: 上传GTPs参考是知识库文件，这些内容可能会被包含在对话中 </p>
+<p><strong>Capabilities</strong>: 可以选择是否开放 Web Browsing、DALL·E Image Generation、Code Interpreter 这三种功能。 </p>
+<p><strong>Actions</strong>: 进阶功能，你可以扩展 GPT 的功能，通过详细设置 API 名称、参数，以及模型应如何使用这些信息，使其能够与外部服务或应用程序互动。</p>
+<h3><span id="5-保存及分享">5、保存及分享</span></h3><p>最后一步是将你的 GPTs 保存起来。请点击屏幕右上角的「Save」按钮，接下来你会看到以下选项：</p>
+<ul>
+<li><strong>Only me</strong>：代表这个机器人只有你自己可以用</li>
+<li><strong>Anyone with a link</strong>: 其他ChatGPT Plus 用户都能使用这个聊天机器人</li>
+</ul>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240401225413790.png"></p>
+<p>选择合适的选项后，点击「Confirm」进行保存。恭喜，你可以开始使用你创建的 GPTs 了。</p>
+<p>在「Explore」页面中可以看到你的所有 GPTs，若要进行修改或删除，直接点击相应的按钮即可。</p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240401225528944.png" alt="image-20240401225528944"></p>
+<p>如果想要分享给其他人使用，只要点击该 GPTs，选择下拉选单中的「Copy Link」就可以了。</p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240401225559248.png" alt="image-20240401225559248"></p>
+<h3><span id="6-使用你的-gpts">6、使用你的 GPTs</span></h3><p>回到ChatGPT的界面，在“ExplainThis 英文履历机器人”的聊天框中键入你的履历经历，机器人便会根据先前设定的回复方式给予反馈。如示例所示，当你输入基本的履历内容后，“ExplainThis 英文履历机器人”便能帮助你进行翻译、内容增强与改写。所有的对话记录都会被妥善保存，方便你随时回顾与查阅。若想要开启新的对话，只需点击你想要交流的机器人，便可开启新的对话，与使用原始的ChatGPT进行对话无异。</p>
+<p>有兴趣的朋友可以按照步骤尝试创建你的GPTs吧。</p>
+<blockquote>
+<p>原文链接：<a href="https://7we.cn/chatgpt-create-gpts/">利用GPTs，打造你的专属AI聊天机器人</a></p>
+</blockquote>
+<hr>
+<p><strong>你好，我是火哥！</strong></p>
+<p>亲爱的读者你好，我是<strong>火哥</strong>，一个乐于分享技术类干货的博主。 最新原创的文章都先发布在公众号，欢迎关注哦~</p>
+<p><strong>扫描下方二维码</strong>，带你第一时间了解ChatGPT、Sora、Midjourney最新动态！</p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/9475746462373236362612.png" alt="9475746462373236362612"></p>
+</div><div class="article-licensing box"><div class="licensing-title"><p>利用GPTs，打造你的专属AI聊天机器人</p><p><a href="https://7we.cn/chatgpt-create-gpts/">https://7we.cn/chatgpt-create-gpts/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>火哥研习社</p></div></div><div class="level-item is-narrow"><div><h6>发布于</h6><p>2024-04-01</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2024-04-02</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/ChatGPT/">ChatGPT</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/chatgpt-prompt-skill/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">利用优质样本提示，优化ChatGPT Prompt的编写技巧</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/poe-introduce/"><span class="level-item">Poe与ChatGPT有何不同？Poe使用指南、优缺点分析及收费情况详解</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="/img/avatar.jpg" alt="火哥"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">火哥</p><p class="is-size-6 is-block">一个乐于分享技术类干货的博主</p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">54</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">18</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">17</p></a></div></div></nav></div></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">分类</h3><ul class="menu-list"><li><a class="level is-mobile" href="/c/Claude3/"><span class="level-start"><span class="level-item">Claude3</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/c/MidJourney/"><span class="level-start"><span class="level-item">MidJourney</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile" href="/c/Onlyfans/"><span class="level-start"><span class="level-item">Onlyfans</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/c/OpenAI/"><span class="level-start"><span class="level-item">OpenAI</span></span><span class="level-end"><span class="level-item tag">28</span></span></a><ul><li><a class="level is-mobile" href="/c/OpenAI/ChatGPT/"><span class="level-start"><span class="level-item">ChatGPT</span></span><span class="level-end"><span class="level-item tag">23</span></span></a></li><li><a class="level is-mobile" href="/c/OpenAI/Sora/"><span class="level-start"><span class="level-item">Sora</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li></ul></li><li><a class="level is-mobile" href="/c/Other/"><span class="level-start"><span class="level-item">Other</span></span><span class="level-end"><span class="level-item tag">11</span></span></a><ul><li><a class="level is-mobile" href="/c/Other/Apple/"><span class="level-start"><span class="level-item">Apple</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/c/Other/Grok/"><span class="level-start"><span class="level-item">Grok</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/c/Other/Patreon/"><span class="level-start"><span class="level-item">Patreon</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/c/Other/PicGo/"><span class="level-start"><span class="level-item">PicGo</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/c/Other/Spotify/"><span class="level-start"><span class="level-item">Spotify</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/c/Other/Typora/"><span class="level-start"><span class="level-item">Typora</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/c/Other/Web%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/"><span class="level-start"><span class="level-item">Web前端技术</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/c/Other/Youtube/"><span class="level-start"><span class="level-item">Youtube</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/c/Other/%E5%B9%BB%E5%85%BD%E5%B8%95%E9%B2%81/"><span class="level-start"><span class="level-item">幻兽帕鲁</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li><li><a class="level is-mobile" href="/c/Poe/"><span class="level-start"><span class="level-item">Poe</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/c/WildCard/"><span class="level-start"><span class="level-item">WildCard</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li></ul></div></div></div><div class="column-right-shadow is-hidden-widescreen"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3"><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">目录</h3><ul class="menu-list"><li><a class="level is-mobile" href="#"><span class="level-left"><span class="level-item">1</span><span class="level-item">精选文章</span></span></a></li><li><a class="level is-mobile" href="#"><span class="level-left"><span class="level-item">2</span><span class="level-item">GPTs 是什么？</span></span></a></li><li><a class="level is-mobile" href="#"><span class="level-left"><span class="level-item">3</span><span class="level-item">GPTs 有什么功能？</span></span></a></li><li><a class="level is-mobile" href="#"><span class="level-left"><span class="level-item">4</span><span class="level-item">打造一个「履历修改助手」GPTs</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#"><span class="level-left"><span class="level-item">4.1</span><span class="level-item">1、定义GPTs 目标</span></span></a></li><li><a class="level is-mobile" href="#"><span class="level-left"><span class="level-item">4.2</span><span class="level-item">2、创建GPTs</span></span></a></li><li><a class="level is-mobile" href="#"><span class="level-left"><span class="level-item">4.3</span><span class="level-item">3、输入需求</span></span></a></li><li><a class="level is-mobile" href="#"><span class="level-left"><span class="level-item">4.4</span><span class="level-item">4、自定义设置</span></span></a></li><li><a class="level is-mobile" href="#"><span class="level-left"><span class="level-item">4.5</span><span class="level-item">5、保存及分享</span></span></a></li><li><a class="level is-mobile" href="#"><span class="level-left"><span class="level-item">4.6</span><span class="level-item">6、使用你的 GPTs</span></span></a></li></ul></li></ul></div></div><style>#toc .menu-list > li > a.is-active + .menu-list { display: block; }#toc .menu-list > li > a + .menu-list { display: none; }</style><script src="/js/toc.js" defer></script></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-04-01T14:51:53.000Z">2024-04-01</time></p><p class="title"><a href="/chatgpt-4-or-3-5/">是否应该升级到ChatGPT 4.0？深度对比ChatGPT 3.5与4.0的差异</a></p><p class="categories"><a href="/c/OpenAI/">OpenAI</a> / <a href="/c/OpenAI/ChatGPT/">ChatGPT</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-04-01T13:51:53.000Z">2024-04-01</time></p><p class="title"><a href="/chatgpt-create-question/">用ChatGPT出题，完全做不完</a></p><p class="categories"><a href="/c/OpenAI/">OpenAI</a> / <a href="/c/OpenAI/ChatGPT/">ChatGPT</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-04-01T13:51:53.000Z">2024-04-01</time></p><p class="title"><a href="/chatgpt-prompt-skill/">利用优质样本提示，优化ChatGPT Prompt的编写技巧</a></p><p class="categories"><a href="/c/OpenAI/">OpenAI</a> / <a href="/c/OpenAI/ChatGPT/">ChatGPT</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-04-01T12:51:53.000Z">2024-04-01</time></p><p class="title"><a href="/chatgpt-create-gpts/">利用GPTs，打造你的专属AI聊天机器人</a></p><p class="categories"><a href="/c/OpenAI/">OpenAI</a> / <a href="/c/OpenAI/ChatGPT/">ChatGPT</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-03-30T12:51:53.000Z">2024-03-30</time></p><p class="title"><a href="/poe-introduce/">Poe与ChatGPT有何不同？Poe使用指南、优缺点分析及收费情况详解</a></p><p class="categories"><a href="/c/Poe/">Poe</a></p></div></article></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><p class="is-size-7">© 2022~2024</p></div><div class="level-end"></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>
