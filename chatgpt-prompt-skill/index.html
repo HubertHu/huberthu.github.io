@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>利用优质样本提示，优化ChatGPT Prompt的编写技巧 - 火哥研习社</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="火哥研习社"><meta name="msapplication-TileImage" content="/img/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="火哥研习社"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="利用优质样本提示，优化ChatGPT Prompt的编写技巧"><meta property="og:type" content="blog"><meta property="og:title" content="利用优质样本提示，优化ChatGPT Prompt的编写技巧"><meta property="og:url" content="https://7we.cn/chatgpt-prompt-skill/"><meta property="og:site_name" content="火哥研习社"><meta property="og:description" content="利用优质样本提示，优化ChatGPT Prompt的编写技巧"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240401152403212.png"><meta property="article:published_time" content="2024-04-01T13:51:53.000Z"><meta property="article:modified_time" content="2024-04-01T07:24:15.267Z"><meta property="article:author" content="火哥研习社"><meta property="article:tag" content="ChatGPT"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240401152403212.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://7we.cn/chatgpt-prompt-skill/"},"headline":"利用优质样本提示，优化ChatGPT Prompt的编写技巧","image":["https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240401152403212.png"],"datePublished":"2024-04-01T13:51:53.000Z","dateModified":"2024-04-01T07:24:15.267Z","author":{"@type":"Person","name":"火哥研习社"},"publisher":{"@type":"Organization","name":"火哥研习社","logo":{"@type":"ImageObject"}},"description":"利用优质样本提示，优化ChatGPT Prompt的编写技巧"}</script><link rel="canonical" href="https://7we.cn/chatgpt-prompt-skill/"><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><script>var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?8bddba9cb2b7bd792530388f5dee9014";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();</script><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><script data-ad-client="3717344278068553" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" async></script><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/">火哥研习社</a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">首页</a><a class="navbar-item" href="/c/WildCard/">WildCard虚拟信用卡</a><a class="navbar-item" href="/c/OpenAI/ChatGPT/">ChatGPT</a><a class="navbar-item" href="/c/OpenAI/Sora/">Sora</a><a class="navbar-item" href="/c/Onlyfans/">OnlyFans</a><a class="navbar-item" href="/c/MidJourney/">Midjourney</a><a class="navbar-item" href="/c/Claude3/">Claude3</a></div><div class="navbar-end"><a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><div class="card-image"><span class="image is-7by3"><img class="fill" src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240401152403212.png" alt="利用优质样本提示，优化ChatGPT Prompt的编写技巧"></span></div><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2024-04-01T13:51:53.000Z" title="2024/4/1 21:51:53">2024-04-01</time>发表</span><span class="level-item"><a class="link-muted" href="/c/OpenAI/">OpenAI</a><span> / </span><a class="link-muted" href="/c/OpenAI/ChatGPT/">ChatGPT</a></span><span class="level-item">30 分钟读完 (大约4515个字)</span></div></div><h1 class="title is-3 is-size-4-mobile">利用优质样本提示，优化ChatGPT Prompt的编写技巧</h1><div class="content"><p>在当下这个数字化高速发展的时代，大型语言模型（LLM）如ChatGPT等，已逐渐融入我们的日常生活与专业工作之中，成为不可或缺的得力助手。它们凭借强大的能力，不仅能回答我们的疑问，还能协助我们撰写文章，甚至解决复杂的技术难题。<br>然而，很多人在初次与ChatGPT交互时，可能会因为沟通上的障碍而感到困惑，仿佛面对一台不按常理出牌的自动售货机。这种感觉并非源于模型本身的局限，而是源于沟通方式的不当。</p>
+<p>沟通，既是一种技巧，也是一门艺术。同样，与大型语言模型（LLM）的交互也需要我们掌握这门艺术。而要充分发挥这些模型的潜力，关键在于我们如何精准且清晰地与它们“对话”。这种对话的精髓，就在于我们提供的“Prompt”——那些精确且清晰的指令。<br>通过深入研究并巧妙运用这些指令，我们可以显著提高与模型“交谈”的质量和效率。特别是当我们掌握了零样本提示、一次样本提示以及少数样本提示等概念与技巧后，便能更加精准地引导模型理解我们的需求，从而使其输出更符合我们期望的结果。</p>
+<span id="more"></span>
+
+<h2><span id="精选文章">精选文章</span></h2><table>
+<thead>
+<tr>
+<th align="left">类别</th>
+<th align="left">教程</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Claude</td>
+<td align="left"><a href="https://7we.cn/resolve-claude3-banned/">如何解决Claude账号被封，及Claude3使用方法</a>|<a href="https://7we.cn/register-claude3/"><font color="ff8000">Claude3注册教程，解决Claude手机号验证问题</font></a>| <a href="https://7we.cn/register-claude3-anthropic/">Anthropic官网提供Claude3注册及使用教程|以及如何预防封号</a></td>
+</tr>
+<tr>
+<td align="left">Sora</td>
+<td align="left"><a href="https://7we.cn/how-to-use-sora/"><font color="ff8000">详细教程与使用指南助您轻松上手Sora</font></a>|<a href="https://7we.cn/what-is-sora/"><font color="ff8000">OpenAI Sora是什么？Sora到底能做什么？它与其他类似技术有什么区别</font></a></td>
+</tr>
+<tr>
+<td align="left">ChatGPT</td>
+<td align="left"><a href="https://7we.cn/subscribe-chatgpt-plus-in-five-minutes/"><font color="ff8000">国内升级GPT-Plus教程，订阅GTP4-0</font></a>|<a href="https://7we.cn/register-chatgpt-without-phone/"><font color="ff8000">国内无需手机验证码获取GPT账号教程</font></a>|<a href="https://7we.cn/register-apple-id/"><font color="ff8000">【2024亲测】保姆级获取美区Apple Id教程</font></a></td>
+</tr>
+<tr>
+<td align="left">Onlyfans</td>
+<td align="left"><a href="https://7we.cn/register-onlyfans/"><font color="ff8000">Onlyfans-注册以及充值、订阅教程</font></a>|<a href="https://7we.cn/how-to-search-blogger-on-onlyfans/"><font color="ff8000">【2024亲测】Onlyfans搜索博主？如何在OnlyFans搜索HongkongDoll</font></a></td>
+</tr>
+<tr>
+<td align="left">Midjourney</td>
+<td align="left"><a href="https://7we.cn/subscribe-midjourney/"><font color="ff8000">【一看就会】五分钟完成MidJourney订阅</font></a></td>
+</tr>
+<tr>
+<td align="left">WildCard</td>
+<td align="left"><a href="https://7we.cn/register-wildcard/"><font color="ff8000">WildCard虚拟信用卡注册保姆级教程</font></a>|<a href="https://7we.cn/wildcard-info/"><font color="ff8000">WildCard虚拟信用卡平台详解</font></a></td>
+</tr>
+<tr>
+<td align="left">其他</td>
+<td align="left"><a href="https://7we.cn/register-patreon/"><font color="ff8000">【新手小白教程】2024最新：如何轻松订阅Patreon及其支付、充值全攻略</font></a>|<a href="https://7we.cn/register-youtube-premium/"><font color="ff8000">【新手小白】如何订阅Youtube Premium？Youtube Premium购买教程（2024最新）</font></a></td>
+</tr>
+</tbody></table>
+<p>以下内容需要使用到ChatGPT，尚未获得ChatGPT的用户，请移步：<a href="https://7we.cn/subscribe-chatgpt-plus-in-five-minutes/">五分钟开通GPT4.0</a>。</p>
+<h2><span id="提供样本提示给prompt指令的好处">提供样本提示给Prompt指令的好处？</span></h2><p>答案就在于这些范例能够显著增强模型对使用者需求和上下文的理解能力，进而促使其产出更加精准、更加贴合使用者期望的回答或解决方案。</p>
+<p>通过精心设计的prompt样本提示指令，我们能够更加高效地发挥模型的能力，选择更加恰当的生成方式，并进一步优化回答的品质和相关性。这一方法不仅提升了我们与LLM模型对话的准确度，还显著增加了我们从LLM模型中获得有用回答的几率。因此，它成为了最大化ChatGPT及其他LLM大型语言模型效能的关键途径。</p>
+<h2><span id="有哪些样本提示指令">有哪些样本提示指令？</span></h2><p>提示指令按照是否提供样本，可划分为三大类别：零样本提示（Zero-Shot）、一次性样本提示（One-Shot）以及少量样本提示（Few-Shot）。零样本提示允许模型在没有先前范例的情况下直接给出回答，展现了其强大的基础推理能力；一次性样本提示则通过引入一个具体范例，帮助模型更好地理解问题背景，从而提升回答的质量；而少量样本提示则通过提供多个范例，为模型提供更丰富的上下文信息，使其能够应对更复杂的问题。在实际应用中，我们可以根据不同的使用情境灵活选择这三种方式，以更精确地达成所需的结果。接下来，本文将详细解析这些样本提示技术的原理与应用。</p>
+<h2><span id="零样本提示zero-shot">零样本提示（Zero-Shot）</span></h2><p>「零样本提示」技术可以让ChatGPT在无需任何先前经验或示例的情况下生成回答的能力。这种策略巧妙地利用了模型所拥有的庞大预训练知识库，使其能够深入理解并回应各类问题，从而显著提升了ChatGPT的适应性和灵活性。使用零样本提示需要精确地表达问题或需求。</p>
+<p>为了更深入地理解零样本提示在实际应用中的效果，接下来我们将通过几个具体的范例，展示如何向ChatGPT提出零样本提示的请求。</p>
+<h3><span id="范例1提取关键字">范例1：提取关键字</span></h3><p>从一段文字中精准筛选出关键字，无需提供繁琐的操作范例，只需以简明扼要的Prompt指令，向ChatGPT明确表达我们的需求即可。具体方法如下所示：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Extract keywords from the below text.</span><br><span class="line">Text: [这里放入需要被筛选关键字的一段文字]</span><br><span class="line">Keywords:</span><br></pre></td></tr></table></figure>
+
+<p>Prompt指令清楚的告诉 ChatGPT 我们的目的是从指定文本中提取关键字。</p>
+<h3><span id="范例2情感分析">范例2：情感分析</span></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Classify the following text&#x27;s sentiment as positive, neutral, or negative.</span><br><span class="line">Desired Format: a number, -1 for negative, 0 for neutral, and 1 for positive</span><br><span class="line">Input: [这里放入需要被筛选关键字的一段文字]</span><br><span class="line">Sentiment:</span><br></pre></td></tr></table></figure>
+
+<p>即便我们没有提供任何具体的范例，ChatGPT 也能理解的我们的要求并依照期望的格式进行回答（-1代表负面、0代表中性、1代表正面）。</p>
+<h3><span id="范例3文章摘要">范例3：文章摘要</span></h3><p>要从一篇较长的文章中提取并产生成摘要，可以在指令中直接告诉 ChatGPT 我们的需求：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Generate a summary for the following text.</span><br><span class="line">Text: [这里放入长文本]</span><br><span class="line">Summary:</span><br></pre></td></tr></table></figure>
+
+<p>通过上述范例，我们不难发现，即便未在指令中附加操作范例，只要巧妙设计Prompt指令，便能成功引导ChatGPT，它能凭借其预先训练的模型，精准把握任务的核心要求，并生成符合预期的输出。</p>
+<h2><span id="一次性样本提示one-shot">一次性样本提示（One-Shot）</span></h2><p>一次性样本提示（One-Shot）是通过向ChatGPT展示一个具有代表性的范例，指引其生成特定的回答或内容的方法，充分利用了模型的学习能力，使得ChatGPT能够迅速理解并模仿范例中的风格和逻辑，从而生成符合我们期望的输出。</p>
+<p>高品质的范例在提升ChatGPT的输出质量方面扮演着至关重要的角色。特别是在需要根据特定情境或条件提供量身定做回答的领域，如医疗、法律或客户服务等。</p>
+<p>以下是一些范例：</p>
+<h3><span id="范例1文章分类">范例1：文章分类</span></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Classify the following texts as related to technology or not.</span><br><span class="line"></span><br><span class="line">Input: &quot;Apple releases new iPhone with innovative features.&quot;</span><br><span class="line">Classification: Related to technology</span><br><span class="line"></span><br><span class="line">Input: &#123;text&#125;</span><br><span class="line">Classification:</span><br></pre></td></tr></table></figure>
+
+<p>这个Prompt通过一个清晰的范例（<code>Input: “Apple releases new iPhone with innovative features.” Classification: Technology-related</code>）展示了如何对特定文字内容进行科技相关性分类。随后，它要求ChatGPT运用此范例作为参照，对另一段文字内容（<code>Input: &#123;text&#125; Classification:</code>）进行同样的分类判断，以确定其是否与科技相关。</p>
+<h3><span id="范例2语言翻译">范例2：语言翻译</span></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Translate the following sentence into French.</span><br><span class="line"></span><br><span class="line">Input: &quot;Hello, how are you?&quot;</span><br><span class="line">Translation: &quot;Bonjour, comment ça va?&quot;</span><br><span class="line"></span><br><span class="line">Input: &#123;text&#125;</span><br><span class="line">Translation:</span><br></pre></td></tr></table></figure>
+
+<p>此范例展示了一个英文句子及其对应的法文翻译，随后要求ChatGPT依循此范例，翻译另一段文字。即便没有额外说明，ChatGPT也能明白我们的需求并完成翻译任务。</p>
+<h3><span id="范例3数据分析解释">范例3：数据分析解释</span></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Explain the following data analysis result.</span><br><span class="line">Input: &quot;Our A/B testing shows a 20% increase in user engagement </span><br><span class="line">        for the new interface.&quot;</span><br><span class="line">Explanation: &quot;This indicates that the new interface effectively </span><br><span class="line">        engages users, likely due to its improved design or features. </span><br><span class="line">        A 20% increase signifies a significant enhancement over the </span><br><span class="line">        previous interface.&quot;</span><br><span class="line">Input: &#123;data analysis result&#125;</span><br><span class="line">Explanation:</span><br></pre></td></tr></table></figure>
+
+<p>此范例中，我们先展示了A&#x2F;B测试结果的描述及解释，随后要求ChatGPT据此解释另一数据分析结果。这种方法不仅帮助模型理解如何处理和解释数据分析的结果，也提供了一种有效的方式，让我们转化专业数据分析为易于理解的解释。</p>
+<p>通过以上示例，我们不难发现，一次性样本提示通过展示清晰范例，有效地引导ChatGPT完成特定任务。</p>
+<h2><span id="少量样本提示few-shot">少量样本提示（Few-Shot）</span></h2><p>少量样本提示（Few-Shot）是通过提供多个精选范例来指导ChatGPT处理特定问题或请求的一种高效方法。这种方法有助于模型学习新任务，因为它为模型提供了丰富的上下文信息，从而提高了回答的质量和加速了模型的学习进程。特别是在需要快速且精确分析大量数据的场合，如金融市场分析或趋势预测，少量样本提示发挥着至关重要的作用。</p>
+<p>以下是一些范例：</p>
+<h3><span id="范例1情绪分析">范例1：情绪分析</span></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Classify the sentiment of the following texts as positive, neutral, </span><br><span class="line">or negative.</span><br><span class="line"></span><br><span class="line">- &quot;This is the best day of my life!&quot; =&gt; Positive</span><br><span class="line">- &quot;I guess it could have been worse.&quot; =&gt; Neutral</span><br><span class="line">- &quot;This was the worst experience I&#x27;ve ever had.&quot; =&gt; Negative</span><br><span class="line"></span><br><span class="line">Your input: &quot;I love this new song.&quot;</span><br><span class="line">Sentiment:</span><br></pre></td></tr></table></figure>
+
+<p>这个范例展示了三种不同情绪（正面Positive、中性Neutral、负面Negative）的文字样本，目的是协助ChatGPT模型理解如何根据文件情绪进行分类。</p>
+<h3><span id="范例2文字摘要">范例2：文字摘要</span></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Generate a summary for the following texts.</span><br><span class="line">Text1: &quot;Stripe provides APIs that allow businesses to accept payments online.&quot; </span><br><span class="line">Summary1:&quot;Stripe offers online payment APIs for businesses.&quot;</span><br><span class="line">Text2: &quot;OpenAI has trained cutting-edge language models that can understand and generate human-like text.&quot; </span><br><span class="line">Summary2:&quot;OpenAI&#x27;s language models mimic human text comprehension and generation.&quot;</span><br><span class="line">Your input Text: &quot;The Great Wall of China is one of the greatest wonders of the world.&quot;</span><br><span class="line">Summary:</span><br></pre></td></tr></table></figure>
+
+<p>在此范例中，我们展示了两组具体的文字内容及其摘要范例，以此指导ChatGPT学习如何从冗长的文字描述中精准提炼关键信息，生成高质量的摘要。</p>
+<h3><span id="范例3基于上下文的问答">范例3：基于上下文的问答</span></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Based on the provided context, answer the following questions.</span><br><span class="line"></span><br><span class="line">Context: &quot;The Great Wall of China stretches over 21,196 kilometers and </span><br><span class="line">was listed as a World Heritage by UNESCO in 1987.&quot;</span><br><span class="line">- &quot;How long is the Great Wall of China?&quot; =&gt; </span><br><span class="line">  &quot;It stretches over 21,196 kilometers.&quot;</span><br><span class="line">- &quot;When was it listed as a World Heritage by UNESCO?&quot; =&gt; </span><br><span class="line">   &quot;In 1987.&quot;</span><br><span class="line">Your question: &quot;What is the Great Wall of China known for?&quot;</span><br><span class="line">Answer:</span><br></pre></td></tr></table></figure>
+
+<p>此范例通过展示一段上下文及其对应的问题和答案，有效帮助ChatGPT理解如何根据上下文信息来准确回答新问题，从而提高了模型的回答质量和准确性。</p>
+<h2><span id="提升生成质量">提升生成质量</span></h2><p>一次性样本提示与零样本提示在多种情境中往往会产生截然不同的结果，特别是在要求模型以特定格式回答或深入理解细节的任务中。</p>
+<p>接下来，我们将通过具体的例子来对比一次性样本提示（One-Shot）和零样本提示（Zero-Shot）在生成结果上的差异，从而更直观地理解这两种方法的特性。</p>
+<h3><span id="范例1产生一篇关于时间管理的短文">范例1：产生一篇关于时间管理的短文</span></h3><p><strong>零样本提示（Zero-Shot）</strong></p>
+<p><strong>零样本提示下，</strong> 仅向 ChatGPT 提出需求，而不提供任何范例或背景信息：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">写一篇关于时间管理的短文。</span><br></pre></td></tr></table></figure>
+
+<p>以下是结果：</p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240401150841034.png" alt="image-20240401150841034"></p>
+<p><strong>一次性样本提示（One-Shot）</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&quot;以下是一篇关于时间管理的短文范例：</span><br><span class="line"></span><br><span class="line">在当今快节奏的社会中，有效的时间管理是成功的关键。一个人如何分配和利用时间，</span><br><span class="line">可以直接影响到他们的生产力和压力水平。例如，使用番茄工作法，通过短暂休息来增</span><br><span class="line">强工作焦点和效率，已被证明是提高时间利用效率的有效方法。</span><br><span class="line"></span><br><span class="line">现在，请你根据这个范例，写一篇关于时间管理的短文。&quot;</span><br></pre></td></tr></table></figure>
+
+<p>以下是结果：</p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240401150926767.png" alt="image-20240401150926767"></p>
+<p><strong>比较</strong></p>
+<p>由于一次性样本提示（One-Shot）提供了具体的范例作为指引，其生成的短文往往更能精准地满足读者需求，提供更为具体且深入的回答。这不仅增强了短文的针对性和实用性，还确保了生成内容的风格一致性。相比之下，零样本提示（Zero-Shot）下生成的短文在内容深度和个性化表达方面可能稍显逊色，不如一次性样本提示那般丰富与细腻。</p>
+<h3><span id="范例2将英文句子翻译成法文"><strong>范例2：将英文句子翻译成法文</strong></span></h3><p><strong>零样本提示（Zero-Shot）</strong></p>
+<p>不提供任何上下文或范例直接请求ChatGPT进行翻译。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&quot;Translate the following sentence into Chinese: </span><br><span class="line">&#x27;The quick brown fox jumps over the lazy dog.&#x27;&quot;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240401151255520.png" alt="image-20240401151255520"></p>
+<p><strong>一次性样本提示（One-Shot）</strong></p>
+<p>在我们请求翻译时附带提供模型一个具体范例，引导 ChatGPT 如何处理类似下面的翻译时。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&quot;Here is an example of translating English to Chinese:</span><br><span class="line"></span><br><span class="line">English: &#x27;Hello, how are you?&#x27;</span><br><span class="line">Chinese: &#x27;你好，你好吗？&#x27;</span><br><span class="line">Now, translate the following sentence into Chinese: </span><br><span class="line">&#x27;The quick brown fox jumps over the lazy dog.&#x27;&quot;</span><br></pre></td></tr></table></figure>
+
+<p>以下是结果：</p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/image-20240401151524044.png" alt="image-20240401151524044"></p>
+<p><strong>比较</strong></p>
+<p>相比之下，虽然零样本提示（Zero-Shot）能应对基本的翻译需求，但面对更具挑战性的翻译任务时，其处理结果可能无法达到一次性样本提示那样的精确度和自然度。因此，对于追求高品质翻译的人来说，一次性样本提示的价值是无可替代的。</p>
+<h2><span id="哪种方法更能提升产出的品质">哪种方法更能提升产出的品质？</span></h2><p>零样本提示（Zero-Shot）、一次性样本提示（One-Shot）和少量样本提示（Few-Shot）各具特色，并适用于不同的情境。在实际应用中，选择何种方式以产出更高品质的结果，应基于具体的任务和目标来做出决策。</p>
+<h3><span id="零样本提示zero-shot"><strong>零样本提示（Zero-Shot）</strong></span></h3><p>零样本提示的优势在于其“无需提供任何示例，仅依赖模型自身预训练的知识来理解和回答问题”的特性，这使得它能够迅速应用于各类普遍性问题。当我们无法提供具体范例或对模型能力有充分信心时，零样本可以作为一个不错的选择。</p>
+<h3><span id="一次性样本提示one-shot"><strong>一次性样本提示（One-Shot）</strong></span></h3><p>一次性样本提示通过提供一个相关提示来精准引导模型，使其更能满足任务的要求和期望。这种方法尤其适用于那些可以通过一个范例明确表达的任务，能够显著提高模型的输出质量和效率。</p>
+<h3><span id="少量样本提示few-shot"><strong>少量样本提示（Few-Shot）</strong></span></h3><p>通过提供数个精选范例来引导模型处理特殊请求或问题，少量样本提示的方法往往能够显著提升结果的品质，特别是在处理复杂任务的时候。</p>
+<p>在前面的文章中，我们详细探讨了如何借助具体且明确的指令来引导大型语言模型（LLM）进行工作，特别是在采用“零样本提示”、“一次性样本提示”和“少量样本提示”这些策略时。通过提供范例，模型能够更好地理解使用者的意图，进而生成更加个性化和精准的回答。</p>
+<p>强烈推荐使用ChatGPT 4.0，它具备更为专业的知识和分析能力，能够更好地满足您的需求。如果您不知道如何升级到Plus服务，可以按照<a href="https://7we.cn/subscribe-chatgpt-plus-in-five-minutes/">Plus升级教程</a>升级。</p>
+<blockquote>
+<p>原文链接：<a href="https://7we.cn/chatgpt-prompt-skill/">利用优质样本提示，优化ChatGPT Prompt的编写技巧</a></p>
+</blockquote>
+<hr>
+<p><strong>你好，我是火哥！</strong></p>
+<p>亲爱的读者你好，我是<strong>火哥</strong>，一个乐于分享技术类干货的博主。 最新原创的文章都先发布在公众号，欢迎关注哦~</p>
+<p><strong>扫描下方二维码</strong>，带你第一时间了解ChatGPT、Sora、Midjourney最新动态！</p>
+<p><img src="https://mvkersc.oss-cn-beijing.aliyuncs.com/9475746462373236362612.png" alt="9475746462373236362612"></p>
+</div><div class="article-licensing box"><div class="licensing-title"><p>利用优质样本提示，优化ChatGPT Prompt的编写技巧</p><p><a href="https://7we.cn/chatgpt-prompt-skill/">https://7we.cn/chatgpt-prompt-skill/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>火哥研习社</p></div></div><div class="level-item is-narrow"><div><h6>发布于</h6><p>2024-04-01</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2024-04-01</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/ChatGPT/">ChatGPT</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/chatgpt-create-question/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">用ChatGPT出题，完全做不完</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/poe-introduce/"><span class="level-item">Poe与ChatGPT有何不同？Poe使用指南、优缺点分析及收费情况详解</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="/img/avatar.jpg" alt="火哥"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">火哥</p><p class="is-size-6 is-block">一个乐于分享技术类干货的博主</p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">52</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">18</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">17</p></a></div></div></nav></div></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">分类</h3><ul class="menu-list"><li><a class="level is-mobile" href="/c/Claude3/"><span class="level-start"><span class="level-item">Claude3</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/c/MidJourney/"><span class="level-start"><span class="level-item">MidJourney</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile" href="/c/Onlyfans/"><span class="level-start"><span class="level-item">Onlyfans</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/c/OpenAI/"><span class="level-start"><span class="level-item">OpenAI</span></span><span class="level-end"><span class="level-item tag">26</span></span></a><ul><li><a class="level is-mobile" href="/c/OpenAI/ChatGPT/"><span class="level-start"><span class="level-item">ChatGPT</span></span><span class="level-end"><span class="level-item tag">21</span></span></a></li><li><a class="level is-mobile" href="/c/OpenAI/Sora/"><span class="level-start"><span class="level-item">Sora</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li></ul></li><li><a class="level is-mobile" href="/c/Other/"><span class="level-start"><span class="level-item">Other</span></span><span class="level-end"><span class="level-item tag">11</span></span></a><ul><li><a class="level is-mobile" href="/c/Other/Apple/"><span class="level-start"><span class="level-item">Apple</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/c/Other/Grok/"><span class="level-start"><span class="level-item">Grok</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/c/Other/Patreon/"><span class="level-start"><span class="level-item">Patreon</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/c/Other/PicGo/"><span class="level-start"><span class="level-item">PicGo</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/c/Other/Spotify/"><span class="level-start"><span class="level-item">Spotify</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/c/Other/Typora/"><span class="level-start"><span class="level-item">Typora</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/c/Other/Web%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/"><span class="level-start"><span class="level-item">Web前端技术</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/c/Other/Youtube/"><span class="level-start"><span class="level-item">Youtube</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/c/Other/%E5%B9%BB%E5%85%BD%E5%B8%95%E9%B2%81/"><span class="level-start"><span class="level-item">幻兽帕鲁</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li><li><a class="level is-mobile" href="/c/Poe/"><span class="level-start"><span class="level-item">Poe</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/c/WildCard/"><span class="level-start"><span class="level-item">WildCard</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li></ul></div></div></div><div class="column-right-shadow is-hidden-widescreen"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3"><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">目录</h3><ul class="menu-list"><li><a class="level is-mobile" href="#"><span class="level-left"><span class="level-item">1</span><span class="level-item">精选文章</span></span></a></li><li><a class="level is-mobile" href="#"><span class="level-left"><span class="level-item">2</span><span class="level-item">提供样本提示给Prompt指令的好处？</span></span></a></li><li><a class="level is-mobile" href="#"><span class="level-left"><span class="level-item">3</span><span class="level-item">有哪些样本提示指令？</span></span></a></li><li><a class="level is-mobile" href="#"><span class="level-left"><span class="level-item">4</span><span class="level-item">零样本提示（Zero-Shot）</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#"><span class="level-left"><span class="level-item">4.1</span><span class="level-item">范例1：提取关键字</span></span></a></li><li><a class="level is-mobile" href="#"><span class="level-left"><span class="level-item">4.2</span><span class="level-item">范例2：情感分析</span></span></a></li><li><a class="level is-mobile" href="#"><span class="level-left"><span class="level-item">4.3</span><span class="level-item">范例3：文章摘要</span></span></a></li></ul></li><li><a class="level is-mobile" href="#"><span class="level-left"><span class="level-item">5</span><span class="level-item">一次性样本提示（One-Shot）</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#"><span class="level-left"><span class="level-item">5.1</span><span class="level-item">范例1：文章分类</span></span></a></li><li><a class="level is-mobile" href="#"><span class="level-left"><span class="level-item">5.2</span><span class="level-item">范例2：语言翻译</span></span></a></li><li><a class="level is-mobile" href="#"><span class="level-left"><span class="level-item">5.3</span><span class="level-item">范例3：数据分析解释</span></span></a></li></ul></li><li><a class="level is-mobile" href="#"><span class="level-left"><span class="level-item">6</span><span class="level-item">少量样本提示（Few-Shot）</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#"><span class="level-left"><span class="level-item">6.1</span><span class="level-item">范例1：情绪分析</span></span></a></li><li><a class="level is-mobile" href="#"><span class="level-left"><span class="level-item">6.2</span><span class="level-item">范例2：文字摘要</span></span></a></li><li><a class="level is-mobile" href="#"><span class="level-left"><span class="level-item">6.3</span><span class="level-item">范例3：基于上下文的问答</span></span></a></li></ul></li><li><a class="level is-mobile" href="#"><span class="level-left"><span class="level-item">7</span><span class="level-item">提升生成质量</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#"><span class="level-left"><span class="level-item">7.1</span><span class="level-item">范例1：产生一篇关于时间管理的短文</span></span></a></li><li><a class="level is-mobile" href="#"><span class="level-left"><span class="level-item">7.2</span><span class="level-item">范例2：将英文句子翻译成法文</span></span></a></li></ul></li><li><a class="level is-mobile" href="#"><span class="level-left"><span class="level-item">8</span><span class="level-item">哪种方法更能提升产出的品质？</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#"><span class="level-left"><span class="level-item">8.1</span><span class="level-item">零样本提示（Zero-Shot）</span></span></a></li><li><a class="level is-mobile" href="#"><span class="level-left"><span class="level-item">8.2</span><span class="level-item">一次性样本提示（One-Shot）</span></span></a></li><li><a class="level is-mobile" href="#"><span class="level-left"><span class="level-item">8.3</span><span class="level-item">少量样本提示（Few-Shot）</span></span></a></li></ul></li></ul></div></div><style>#toc .menu-list > li > a.is-active + .menu-list { display: block; }#toc .menu-list > li > a + .menu-list { display: none; }</style><script src="/js/toc.js" defer></script></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-04-01T13:51:53.000Z">2024-04-01</time></p><p class="title"><a href="/chatgpt-create-question/">用ChatGPT出题，完全做不完</a></p><p class="categories"><a href="/c/OpenAI/">OpenAI</a> / <a href="/c/OpenAI/ChatGPT/">ChatGPT</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-04-01T13:51:53.000Z">2024-04-01</time></p><p class="title"><a href="/chatgpt-prompt-skill/">利用优质样本提示，优化ChatGPT Prompt的编写技巧</a></p><p class="categories"><a href="/c/OpenAI/">OpenAI</a> / <a href="/c/OpenAI/ChatGPT/">ChatGPT</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-03-30T12:51:53.000Z">2024-03-30</time></p><p class="title"><a href="/poe-introduce/">Poe与ChatGPT有何不同？Poe使用指南、优缺点分析及收费情况详解</a></p><p class="categories"><a href="/c/Poe/">Poe</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-03-30T12:51:53.000Z">2024-03-30</time></p><p class="title"><a href="/poe-register-guide/">Poe会员开通教程</a></p><p class="categories"><a href="/c/Poe/">Poe</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-03-29T12:51:53.000Z">2024-03-29</time></p><p class="title"><a href="/chatgpt-integrate-discord/">ChatGPT与Discord的完美结合——团队协作的得力助手</a></p><p class="categories"><a href="/c/OpenAI/">OpenAI</a> / <a href="/c/OpenAI/ChatGPT/">ChatGPT</a></p></div></article></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><p class="is-size-7">© 2022~2024</p></div><div class="level-end"></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>
