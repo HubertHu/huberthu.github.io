@@ -1,3 +1,4 @@
+https://7we.cn/fantia-register-guide/
 https://7we.cn/chatgpt-freegpt-35/
 https://7we.cn/chatgpt-freegpt-35-docker/
 https://7we.cn/chatgpt-create-ppt/
@@ -79,6 +80,7 @@ https://7we.cn/tags/Patreon/
 https://7we.cn/tags/Spotify/
 https://7we.cn/tags/miniProgram/
 https://7we.cn/tags/ChatGPT-Poe/
+https://7we.cn/tags/Fantia/
 https://7we.cn/c/WildCard/
 https://7we.cn/c/MidJourney/
 https://7we.cn/c/Claude3/
@@ -97,3 +99,4 @@ https://7we.cn/c/Other/%E5%B9%BB%E5%85%BD%E5%B8%95%E9%B2%81/
 https://7we.cn/c/Other/Patreon/
 https://7we.cn/c/Other/PicGo/
 https://7we.cn/c/Poe/
+https://7we.cn/c/Other/Fantia/
