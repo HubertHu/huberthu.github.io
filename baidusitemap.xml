@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://7we.cn/others/install-influxdb-with-docker.html</loc>
+    <lastmod>2024-04-12</lastmod>
+  </url>
+  <url>
+    <loc>https://7we.cn/chatgpt4-turbo-plus/</loc>
+    <lastmod>2024-04-12</lastmod>
+  </url>
+  <url>
+    <loc>https://7we.cn/others/how-to-fix-conflicting-bean-definition-exception.html</loc>
+    <lastmod>2024-04-12</lastmod>
+  </url>
+  <url>
+    <loc>https://7we.cn/others/self_sign_ssl_on_centos.html</loc>
+    <lastmod>2024-04-12</lastmod>
+  </url>
+  <url>
     <loc>https://7we.cn/fantia-register-guide/</loc>
     <lastmod>2024-04-10</lastmod>
   </url>
