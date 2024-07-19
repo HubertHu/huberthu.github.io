@@ -1,3 +1,4 @@
+https://7we.cn/how-to-use-fomepay/
 https://7we.cn/chatgpt-4o-mini-advancing-cost-efficient-intelligence/
 https://7we.cn/others/open-port-on-centos.html
 https://7we.cn/others/install-vsftp-on-centos.html
@@ -94,6 +95,7 @@ https://7we.cn/tags/Spotify/
 https://7we.cn/tags/miniProgram/
 https://7we.cn/tags/ChatGPT-Poe/
 https://7we.cn/tags/Fantia/
+https://7we.cn/tags/FomePay/
 https://7we.cn/c/WildCard/
 https://7we.cn/c/MidJourney/
 https://7we.cn/c/Claude3/
@@ -113,3 +115,4 @@ https://7we.cn/c/Other/Patreon/
 https://7we.cn/c/Other/PicGo/
 https://7we.cn/c/Poe/
 https://7we.cn/c/Other/Fantia/
+https://7we.cn/c/FomePay/

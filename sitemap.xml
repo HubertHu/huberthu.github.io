@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://7we.cn/how-to-use-fomepay/</loc>
+    
+    <lastmod>2024-07-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://7we.cn/chatgpt-4o-mini-advancing-cost-efficient-intelligence/</loc>
     
     <lastmod>2024-07-19</lastmod>
@@ -829,6 +838,13 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://7we.cn/tags/FomePay/</loc>
+    <lastmod>2024-07-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
@@ -959,6 +975,13 @@
   
   <url>
     <loc>https://7we.cn/c/Other/Fantia/</loc>
+    <lastmod>2024-07-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://7we.cn/c/FomePay/</loc>
     <lastmod>2024-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
