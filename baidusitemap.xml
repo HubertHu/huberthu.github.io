@@ -1,15 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://7we.cn/others/blog-hexo-theme-butterfly-custom-footer.html</loc>
+    <lastmod>2024-07-27</lastmod>
+  </url>
+  <url>
+    <loc>https://7we.cn/others/java-apache-pio-cell-with-different-color.html</loc>
+    <lastmod>2024-07-27</lastmod>
+  </url>
+  <url>
+    <loc>https://7we.cn/others/blog-with-hexo-github-pages.html</loc>
+    <lastmod>2024-07-26</lastmod>
+  </url>
+  <url>
+    <loc>https://7we.cn/others/blog-hexo-theme-butterfly-widget-wx.html</loc>
+    <lastmod>2024-07-26</lastmod>
+  </url>
+  <url>
+    <loc>https://7we.cn/others/blog-hexo-theme-butterfly.html</loc>
+    <lastmod>2024-07-25</lastmod>
+  </url>
+  <url>
     <loc>https://7we.cn/others/chatgpt-paper-usage.html</loc>
     <lastmod>2024-07-25</lastmod>
   </url>
   <url>
     <loc>https://7we.cn/chatgpt-paper-steps/</loc>
-    <lastmod>2024-07-25</lastmod>
-  </url>
-  <url>
-    <loc>https://7we.cn/others/blog-hexo-theme-butterfly.html</loc>
     <lastmod>2024-07-25</lastmod>
   </url>
   <url>
@@ -55,10 +71,6 @@
   <url>
     <loc>https://7we.cn/others/blog-accelerate-by-vercel.html</loc>
     <lastmod>2024-07-21</lastmod>
-  </url>
-  <url>
-    <loc>https://7we.cn/others/blog-with-hexo-github-pages.html</loc>
-    <lastmod>2024-07-20</lastmod>
   </url>
   <url>
     <loc>https://7we.cn/others/nodejs-install-guide.html</loc>
